@@ -8,13 +8,13 @@ to = Serien
 
 relationship =
 
-1 Regisseur/in 
+1 Director 
 
-2 Autor/innen 
+2 Writer
 
-3 beides
+3 Executive Producer
 
-4 Produktionsfirma				
+4 Production Company				
 
 # Nodelist					
 id = Kürzel	
@@ -61,9 +61,9 @@ rating = durchschnittliche Zuschauerquote der Episode in Prozent
 
 year = Erscheinungsjahr	der Episode
 
-country = Herkunftsland der Episode
+country = Kürzel Herkunftsland der Episode 
 
-location = Ort national
+location = Ort national (als Eigenname codiert)
 
 Bearbeitungshinweise					
 Wir erstellen ein Two-Mode-Netzwerk, weil wir sowohl Akteur/innen-Knoten, als auch Serien-Knoten im Netzwerk haben. Dazu brauchen wir Infos über Regisseur/innen, Autor/innen und die Produktionsfirmen. Diese erheben wir auf der Website "IMDb", eine Filmdatenbank. Wichtig ist für uns aber auch, wo die Akteur/innen studiert haben und ob sie Preise für ihre Arbeit bekommen haben. Infos zur Serie, wie z.B. das Genre, das Erscheinungsjahr oder das Rating bekommen wir auf "Rotten Toamtoes", eine Website, die vor allem Filmkritiken und News veröffentlicht. 
