@@ -6,36 +6,57 @@ from = Akteur/innen
 
 to = Serien 	
 
-  weight = 
-1 erste Produktion
-2 mehrere Produktion/-en
 relationship =
+
 1 Regisseur/in 
+
 2 Autor/innen 
+
 3 beides
+
 4 Produktionsfirma				
 
 # Nodelist					
-id = Kürzel				
-name = Vor- und Nachname 				
+id = Kürzel	
+
+name = Vor- und Nachname 
+
 sex =
+
 1 male 
+
 2 female 
-3 divers				
-study = Wo haben die Akteur/innen studiert?				
-awards = Welche Preise/Auszeichnungen haben die Akteur/innen bekommen? 				
+
+3 divers
+
+study = Wo haben die Akteur/innen studiert?
+
+awards = Welche Preise/Auszeichnungen haben die Akteur/innen bekommen? 
+
 type =
+
 1 Akteur/innen 
-2 Serien				
+
+2 Serien	
+
 genre = 
+
 1 fantasy
+
 2 comedy
+
 3 rom com 
+
 4 crime 
+
 5 mockumentary
+
 6 drama 
-7 young adult			
-rating	durchschnittliche Zuschauerquote				
+
+7 young adult		
+
+rating	durchschnittliche Zuschauerquote	
+
 year	Erscheinungsjahr				
 
 Bearbeitungshinweise					
