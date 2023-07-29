@@ -1,7 +1,7 @@
 # CODEBUCH					
 					
-# Edgelist					
-from = Akteur/innen 				
+# Edgelist  					
+from = Akteur/innen  				
 to = Serien 				
 weight = 
 1 erste Produktion
