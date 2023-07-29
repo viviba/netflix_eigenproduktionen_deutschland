@@ -33,7 +33,7 @@ university = Uni/Hochschule an der Protas studiert haben (als Eigenname codiert)
 
 university_short = Kürzel der jeweiligen Uni/Hochschule
 
-awards = Welche Preise/Auszeichnungen haben die Akteur/innen bekommen? (als Eigenname codiert)
+awards = aktuellster Preis/Auszeichnung des/der Akteur/in (als Eigenname codiert)
 
 type =
 
