@@ -29,9 +29,11 @@ sex =
 
 3 divers
 
-study = Wo haben die Akteur/innen studiert?
+university = Uni/Hochschule an der Protas studiert haben (als Eigenname codiert)
 
-awards = Welche Preise/Auszeichnungen haben die Akteur/innen bekommen? 
+university_short = Kürzel der jeweiligen Uni/Hochschule
+
+awards = Welche Preise/Auszeichnungen haben die Akteur/innen bekommen? (als Eigenname codiert)
 
 type =
 
@@ -55,9 +57,13 @@ genre =
 
 7 young adult		
 
-rating	durchschnittliche Zuschauerquote	
+rating = durchschnittliche Zuschauerquote der Episode in Prozent	
 
-year	Erscheinungsjahr				
+year = Erscheinungsjahr	der Episode
+
+country = Herkunftsland der Episode
+
+location = Ort national
 
 Bearbeitungshinweise					
 Wir erstellen ein Two-Mode-Netzwerk, weil wir sowohl Akteur/innen-Knoten, als auch Serien-Knoten im Netzwerk haben. Dazu brauchen wir Infos über Regisseur/innen, Autor/innen und die Produktionsfirmen. Diese erheben wir auf der Website "IMDb", eine Filmdatenbank. Wichtig ist für uns aber auch, wo die Akteur/innen studiert haben und ob sie Preise für ihre Arbeit bekommen haben. Infos zur Serie, wie z.B. das Genre, das Erscheinungsjahr oder das Rating bekommen wir auf "Rotten Toamtoes", eine Website, die vor allem Filmkritiken und News veröffentlicht. 
