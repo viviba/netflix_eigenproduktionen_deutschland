@@ -36,7 +36,9 @@ university_short = Kürzel der jeweiligen Uni/Hochschule
 awards = 
 
 1 = 1-3 Preise
+
 2 = 3-5 Preise
+
 3 = über 5 Preise
 
 
