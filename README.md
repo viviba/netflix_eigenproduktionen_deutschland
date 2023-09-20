@@ -37,7 +37,7 @@ awards =
 
 1 = 1-3 Preise
 
-2 = 3-5 Preise
+2 = 4-5 Preise
 
 3 = über 5 Preise
 
