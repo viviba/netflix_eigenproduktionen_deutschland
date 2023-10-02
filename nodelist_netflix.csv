@@ -1,0 +1,568 @@
+id,name,sex,university,university_short,awards,type,genre,country,location,rating,year,Produktionsfirma
+HtsDS1,Staffel 1,,,,,2,2,DE,Koeln,,2019,Bildundtonfabrik
+HtsDS1E1,Staffel 1 Episode 1,,,,,2,2,DE,Koeln,"7,7",2019,Bildundtonfabrik
+HtsDS1E2,Staffel 1 Episode 2,,,,,2,2,DE,Koeln,"7,8",2019,Bildundtonfabrik
+HtsDS1E3,Staffel 1 Episode 3,,,,,2,2,DE,Koeln,"7,7",2019,Bildundtonfabrik
+HtsDS1E4,Staffel 1 Episode 4,,,,,2,2,DE,Koeln,"7,8",2019,Bildundtonfabrik
+HtsDS1E5,Staffel 1 Episode 5,,,,,2,2,DE,Koeln,"7,9",2019,Bildundtonfabrik
+HtsDS1E6,Staffel 1 Episode 6,,,,,2,2,DE,Koeln,"8,4",2019,Bildundtonfabrik
+LM,Lars Montag,1,Kunsthochschule fuer Medien in Koeln,KHM,2,1,,,,,,
+TrTi,Traeume sind wie wilde Tiger,,,,,2,2,DE,Mumbai,"6,4",2022,KiKA
+WeHe,Werkstatthelden mit Herz,,,,,2,2,DE,,"5,4",2020,Film Line Productions GmbH
+StJo,St Josef am Berg,,,,,2,2,AUT,Rauris,"5,3",2018,Mona Film Produktion
+EiSeMi,Einsamkeit und Sex und Mitleid,,,,,2,2,DE,,"6,4",2017,Herzfeld Productions
+HeKlKr,Herzblut Ein Kluftinger Krimi,,,,,2,4,DE,,"6,3",2016,Odeon Fiction
+ScKlKr,Schutzpatron Ein Kluftinger Krimi,,,,,2,4,DE,,"6,8",2016,Odeon Fiction
+MaRe,Matterns Revier,,,,,2,2,DE,,"6,2",2015,
+MoGe,Mord in bester Gesellschaft,,,,,2,2,AUT,,"5,2",2015,
+HeZe,Heiter bis toedlich Zwischen den Zeilen,,,,,2,4,DE,Aachen,"6,7",2013,
+AF,Arne Feldhusen,1,,,2,1,,,,,,
+BuBa,Buba,,,,,2,2,DE,,"5,9",2022,Bildundtonfabrik
+TaRe,Tatortreiniger,,,,,2,2,DE,,"8,5",2011,Studio Hamburg
+De86,Deutschland 86,,,,,2,,DE,,"7,6",2018,UFA Fiction
+MaMy,Magical Mystery,,,,,2,2,DE,Hamburg,"6,5",2017,ARD Degeto Film
+VoLe,Vorsicht vor Leuten,,,,,2,2,DE,,"6,3",2015,Lailaps Pictures
+StBe,Stromberg,,,,,2,2,DE,Arnsberg,"7,3",2014,Brainpool
+SC,Sebastian Colley,1,,,3,1,,,,,,
+LaOnLa,LOL Last One Laughing,,,,,2,2,DE,,"7,5",2021,Constantin Entertainment
+HoTat,How to Tatort,,,,,2,,DE,Bremen,"6,8",2020,
+ExTr,Extra 3,,,,,2,2,WDE,,"7,4",2011,Norddeutscher Rundfunk
+GuArOr,Gute Arbeit Originals,,,,,2,2,DE,Koeln,"8,6",2016,Bildundtonfabrik
+NeMa,Neo Magazin,,,,,2,2,DE,,"7,8",2014,Bildundtonfabrik
+UwEr,Die unwahrscheinlichen Ereignisse im Leben von,,,,,2,2,DE,,"7,2",2014,Bildundtonfabrik
+PoHo,Ponyhof,,,,,2,2,DE,,5,2015,Endemol Deutschland
+WaWe,Was waere wenn,,,,,2,2,DE,,"7,6",2014,
+DuZe,Das Duell um die Zeit,,,,,2,2,DE,Koeln,"6,8",2014,
+CiHaGa,Circus HalliGalli,,,,,2,2,DE,,"6,6",2013,Endemol Deutschland
+StFr,Sturmfrei,,,,,2,,DE,,"6,6",2011,Bumm Film
+PK,Philipp Kaessbohrer,1,Kunsthochschule fuer Medien in Koeln,KHM,3,1,,,,,,
+KiSt,King of Stonks,,,,,2,2,DE,Berlin,"6,7",2020,Bildundtonfabrik
+DrIn,Drinnen im Internet sind alle gleich,,,,,2,2,DE,,"7,6",2020,Bildundtonfabrik
+KrMa,Kroymann,,,,,2,2,DE,,"7,1",2018,Radio Bremen
+MM,Matthias Murmann,1,Kunsthochschule fuer Medien in Koeln,KHM,2,1,,,,,,
+HtsDS2E1,,,,,,2,2,DE,Koeln,"8,1",2020,Bildundtonfabrik
+HtsDS2E2,,,,,,2,2,DE,Koeln,"7,7",2020,Bildundtonfabrik
+HtsDS2E3,,,,,,2,2,DE,Koeln,8,2020,Bildundtonfabrik
+HtsDS2E4,,,,,,2,2,DE,Koeln,"8,1",2020,Bildundtonfabrik
+HtsDS2E5,,,,,,2,2,DE,Koeln,"8,1",2020,Bildundtonfabrik
+HtsDS2E6,,,,,,2,2,DE,Koeln,"8,5",2020,Bildundtonfabrik
+MS,Mia Spengler,2,Filmakademie Baden Wuerttemberg,FABW,2,1,,,,,,
+StFeSc,Strafe nach Ferdinand von Schirach,,,,,2,4,DE,,"7,2",2022,MOOVIE the art of entertainment
+TaGoZe,Tatort Die goldene Zeit,,,,,2,4,WDE,Hamburg,"6,4",2019,Wueste Medien
+TaScLe,Tatort Schattenleben,,,,,2,4,DE,Hamburg,6,2022,
+FlLe,Fluss des Lebens,,,,,2,6,DE,,"5,8",2019,Schiwago Film
+LeNiKl,Leg dich nicht mit Klara an,,,,,2,2,DE,Stuttgart,"5,2",2017,UFA Fiction
+BaGo,Back for Good,,,,,2,2,DE,,"6,5",2017,Zum goldenen Lamm Filmproduktion
+NiBoBe,Nicht den Boden beruehren,,,,,2,6,DE,,,2013,Filmakademie Baden Wuerttemberg
+NT,Natalie Thomas,2,Internationale Filmschule Koeln,IFS,,1,,,,,,
+ST,Stefan Titze,1,Hochschule Macromedia,MHMK,1,1,,,,,,
+KaLa,Karacholand,,,,,2,2,DE,,"5,6",2018,Nashorn FIlmhaus AG
+MF,Mats Frey,1,Zuercher Hochschule der Kuenste,ZHdK,1,1,,,,,,
+TsUg,Tschugger,,,,,2,2,CHE,Wallis,"8,3",2021,Shining Film
+WaPo,WaPo Bodensee,,,,,2,4,DE,Bodensee,"4,9",2020,Saxonia Media Filmproduktionsgesellschaft
+FuUm,Fuer Umme die Serie,,,,,2,2,DE,Berlin,"6,6",2019,Eotv
+TaZwLe,Tatort Zwei Leben,,,,,2,4,DE,,"5,3",2017,ARD
+TaElRa,Tatort Der Elefant im Raum,,,,,2,4,CHE,Lucerne,"5,1",2019,ARD
+BeSt,Der Bestatter,,,,,2,4,CHE,,"7,3",2017,Snake Films
+HtsDS3,,,,,,2,2,DE,Koeln,,2021,Bildundtonfabrik
+HtsDS3E1,,,,,,2,2,DE,Koeln,"7,2",2021,Bildundtonfabrik
+HtsDS3E2,,,,,,2,2,DE,Koeln,"7,6",2021,Bildundtonfabrik
+HtsDS3E3,,,,,,2,2,DE,Koeln,"7,7",2021,Bildundtonfabrik
+HtsDS3E4,,,,,,2,2,DE,Koeln,"7,9",2021,Bildundtonfabrik
+HtsDS3E5,,,,,,2,2,DE,Koeln,"8,3",2021,Bildundtonfabrik
+HtsDS3E6,,,,,,2,2,DE,Koeln,"8,4",2021,Bildundtonfabrik
+RwS1,Staffel 1,,,,,2,4,DE,Berlin,,2020,Gebrueder Beetz Filmproduktion
+RwS1E1,Staffel 1 Episode 1,,,,,2,4,DE,Berlin,"7,3",2020,Gebrueder Beetz Filmproduktion
+RwS1E2,Staffel 1 Episode 2,,,,,2,4,DE,Berlin,"7,4",2020,Gebrueder Beetz Filmproduktion
+RwS1E3,Staffel 1 Episode 3,,,,,2,4,DE,Berlin,7,2020,Gebrueder Beetz Filmproduktion
+RwS1E4,Staffel 1 Episode 4,,,,,2,4,DE,Berlin,7,2020,Gebrueder Beetz Filmproduktion
+JP,Jan Peter,1,,,1,1,,,,,,
+DeleFl,Der letzte Flug Ein deutsches Geheimnis,,,,,2,4,DE,,"8,2",2022,DOKfilmFernsehproduktion
+De911,Deutschland 911,,,,,2,,DE,Hamburg,"8,7",2021,DKfilmFernsehproduktion
+KrdeTr,Krieg der Traeume,,,,,2,6,AU,,"7,8",2018,LOOKSfilm
+GePo,Geheimauftrag Pontifex Der Vatikan im Kalten Krieg,,,,,2,,DE,,"8,2",2015,DOKfilm Fernsehproduktion GmbH
+GrWaDi,Great War Diaries,,,,,2,,,,"8,8",2014,LOOKSfilm
+14TaErWe,14 Tagebuecher des Ersten Weltkriegs,,,,,2,6,,,"8,5",2014,LOOKSfilm
+GT,Georg Tschurtschenthaler,1,Wirtschaftsuniversitaet Wien,WU,1,1,,,,,,
+CB,Christian Beetz,1,Humboldt Universitaet Berlin,HU,2,1,,,,,,
+JuCa,Juan Carlos Downfall of the King,,,,,2,6,DE,Madrid,"7,1",2023,Gebrueder Beetz Filmproduktion
+ReSp,Reeperbahn Spezialeinheit FD65,,,,,2,4,DE,,"8,2",2022,Gebrueder Beetz Filmproduktion
+DaFo,Das Forum Rettet Davos die Welt,,,,,2,,DE,,"7,2",2019,Gebrueder Beetz Filmproduktion
+DiKu,Die Kulturakte,,,,,2,,DE,,"6,8",2011,Gebrueder Beetz Filmproduktion
+18S1,Staffel 1,,,,,2,6,,Berlin,,2022,Dark Ways
+18S1E1,Staffel 1 Episode 1,,,,,2,6,,Berlin,8,2022,Dark Ways
+18S1E2,Staffel 1 Episode 2,,,,,2,6,,Berlin,"7,6",2022,Dark Ways
+18S1E3,Staffel 1 Episode 3,,,,,2,6,,Berlin,"7,7",2022,Dark Ways
+18S1E4,Staffel 1 Episode 4,,,,,2,6,,Berlin,"7,9",2022,Dark Ways
+18S1E5,Staffel 1 Episode 5,,,,,2,6,,Berlin,"8,4",2022,Dark Ways
+18S1E6,Staffel 1 Episode 6,,,,,2,6,,Berlin,"7,9",2022,Dark Ways
+18S1E7,Staffel 1 Episode 7,,,,,2,6,,Berlin,"8,1",2022,Dark Ways
+18S1E8,Staffel 1 Episode 8,,,,,2,6,,Berlin,"8,4",2022,Dark Ways
+SltoNa,Sleepless Eine toedliche Nacht,,,,,2,,UK,,"5,6",2017,Open Road Films
+WhAmI,Who Am I Kein System ist sicher,,,,,2,4,DE,Berlin,"7,5",2014,SevenPictures Film
+Ma1899,Making 1899,,,,,2,,DE,,"7,6",2022,
+JLD,Juliana Lima Dehne,2,Sorbonne Universite,Paris IV,1,1,,,,,,
+OvLu,Over Lunch,,,,,2,2,DE,,8,2013,Dehne Lima Film
+JF,Jantje Friese,2,Hochschule fuer Fernsehen und Film Muenchen,HFFM,1,1,,,,,,
+DM,Dario Madrona,1,,,1,1,,,,,,
+Tutienmior,Tu tijera en mi oreja,,,,,2,2,ESP,Madrid,"7,6",2023,Paciencia Films
+LoPrADN,Los Protegidos A D N,,,,,2,2,ESP,,8,2022,Atresmedia
+HidePr,Historias de Protegidos,,,,,2,6,ESP,,"6,6",2022,Buenida Estudios
+EliTe,Elite,,,,,2,4,ESP,Madrid,"7,3",2018,Zeta Ficcion
+LoPrElre,Los Protegidos El regreso,,,,,2,2,ESP,,"7,5",2021,Atresmedia
+OnUsLy,One of Us Is Lying,,,,,2,4,UK,Neuseeland,"6,9",2021,5 More Minutes Productions
+ElKuOmAnAl,Elite Kurzgeschichten Omar Ander Alexis,,,,,2,6,ESP,Madrid,"7,2",2021,Producciones Zeta
+ElKuGuCaRe,Elite Kurzgeschichten Guzman Caye Rebe,,,,,2,4,ESP,Madrid,"7,4",2021,Producciones Zeta
+AiKi,Air Kisses,,,,,2,2,ESP,,"6,1",2021,Alea Media
+LoEl,Los Elegidos,,,,,2,6,MEX,,"6,8",2019,
+Lekounge,Leute kommen und gehen,,,,,2,2,ESP,Katalonien,"6,2",2019,Atresmedia Cine
+Visipe,Vivir sin permiso,,,,,2,6,ESP,Galicien,"7,4",2018,Alea Media
+ViRo,Victor Ros,,,,,2,,ESP,Madrid,7,2014,New Atlantis
+Alquce,Algo que celebrar,,,,,2,2,ESP,,"6,8",2015,2oblefilo Producciones
+ViCa,Vive Cantando,,,,,2,,ESP,Madrid,"6,3",2013,2oblefilo Producciones
+EK,Emma Ko,2,University of Bristol,UoB,,1,,,,,,
+Firs,First,,,,,2,,UK,,,2018,
+DaCi,Danis Castle,,,,,2,2,UK,Northern Ireland,"5,9",2013,
+HoLa,Hollyoaks Later,,,,,2,2,UK,Northern Ireland,7,2008,Lime Pictures
+DaHo,Danis House,,,,,2,2,UK,Kent,6,2008,The Foundation
+JBN,Jerome Bucchan Nelson,1,University of Edinburgh,UoE,,1,,,,,,
+NoCr,Noughts Crosses,,,,,2,6,UK,,"6,3",2020,Mammoth Screen
+Bupr,Bulletproof,,,,,2,4,UK,Liverpool,"6,7",2017,Vertigo Films
+UnSt,Unsaid Stories,,,,,2,6,UK,,"4,7",2020,Greenacre Film
+Caal,Casualty,,,,,2,6,UK,London,"6,1",1986,British Broadcasting Corporation
+EaEn,East Enders,,,,,2,4,UK,Dorset,"4,7",1985,
+Hooa,Hollyoaks,,,,,2,6,UK,Cheshire,"4,6",1995,Lime Pictures
+ENA,Emil Nygaard Albertsen,1,Den Danske Filmskole,Filmskolen Dk,1,1,,,,,,
+ThGu,The Guilty,,,,,2,4,US,Kalifornien,"6,3",2021,Amet Entertainment
+ThGuSk,The Guilty Den Skyldige,,,,,2,4,DNK,,"7,5",2018,Nordisk Film SPRING
+DoTeMeYoDr,Dont Tell Me About Your Dreams,,,,,2,6,DNK,,"7,3",2017,Octopuss
+JoTe,Joe Tech,,,,,2,2,DNK,,"6,2",2017,Nordisk Film SPRING
+KaFr,Kanonkongen Freja,,,,,2,,DNK,,"8,3",2016,
+Imo,I morke,,,,,2,6,DNK,,"6,5",2015,Den Danske Filmskole
+Heve,Heaven,,,,,2,6,DNK,Mallorca,"6,7",2015,Den Danske Filmskole
+EliTen,Eliten,,,,,2,6,DNK,,"5,6",2015,Eliten Film
+SlS1,Staffel 1,,,,,2,4,DE,Frankfurt am Main,,2019,Stick Up Filmproduktion
+SlS1E1,Staffel 1 Episode 1,,,,,2,4,DE,Frankfurt am Main,"7,2",2019,Stick Up Filmproduktion
+SlS1E2,Staffel 1 Episode 2,,,,,2,4,DE,Frankfurt am Main,8,2019,Stick Up Filmproduktion
+SlS1E3,Staffel 1 Episode 3,,,,,2,4,DE,Frankfurt am Main,8,2019,Stick Up Filmproduktion
+SlS1E4,Staffel 1 Episode 4,,,,,2,4,DE,Frankfurt am Main,"8,1",2019,Stick Up Filmproduktion
+SlS1E5,Staffel 1 Episode 5,,,,,2,4,DE,Frankfurt am Main,"8,4",2019,Stick Up Filmproduktion
+SlS1E6,Staffel 1 Episode 6,,,,,2,4,DE,Frankfurt am Main,"8,1",2019,Stick Up Filmproduktion
+ME,Maximilian Erlenwein,1,Deutsche Film und Fernsehakademie Berlin,DFFB,1,1,,,,,,
+ThDi,The Dive,,,,,2,,DE,Malta,"5,6",2023,Augenschein Filmproduktion
+Stere,Stereo,,,,,2,4,DE,Bavaria,"6,5",2014,Frisbeefilms
+OL,Ole Lohmann,1,,,1,1,,,,,,
+KZM,Kim Zimmermann,2,Hochschule fuer Film und Fernsehen Potsdam Babelsberg,HFFP,,1,,,,,,
+DePa,Der Parfumeur,,,,,2,4,DE,,"3,6",2022,Constantin Television
+ZEZeAb,ZERV Zeit der Abrechnung,,,,,2,4,DE,Tschechische Republik,"6,8",2022,Gabriela Sperl Produktion
+SY,Soleen Yusef,2,Filmakademie Baden Wuerttemberg,FABW,1,1,,,,,,
+SaEiSa,Sam Ein Sachse,,,,,2,4,DE,Berlin,"6,6",2023,Big Window Productions
+De89,Deutschland 89,,,,,2,6,DE,Berlin,"7,7",2020,UFA Fiction
+MeKoTa,Meiberger Im Kopf des Taeters,,,,,2,4,AUT,,"7,2",2018,Mona Film Produktion
+SOLe,SOKO Leipzig,,,,,2,4,DE,Leipzig,"5,7",2001,UFA Fiction
+HaohDa,Haus ohne Dach,,,,,2,6,DE,Duhok Kurdistan,"7,1",2017,Mitos Film
+OK,Oliver Karan,1,University of Miami,UoM,1,1,,,,,,
+AA,Arne Ahrens,1,Johannes Gutenberg Universitaet Mainz,JGU,2,1,,,,,,
+WaDu,WaPo Duisburg,,,,,2,4,DE,,7,2022,Warner Bros ITVP Deutschland
+DiRoCo,Die Rosenheim Cops,,,,,2,2,DE,Bavaria,6,2002,Bavaria Fiction
+Stava,Stavanger,,,,,2,6,DE,,"5,8",2014,
+MeBe,Meine Beschneidung,,,,,2,2,DE,Tuerkei,"6,1",2013,Neue Zeit Filmproduktion
+DS,Dennis Schanz,1,Freie Universitaet Berlin,FU Berlin,1,1,,,,,,
+Dohaha,Doppelhaushaelfte,,,,,2,2,DE,Brandenburg,"7,6",2022,Iconoclast Films
+DakS1,Staffel 1,,,,,2,6,DE,Berlin,,,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E1,Staffel 1 Episode 1,,,,,2,6,DE,Berlin,"8,2",2017,Wiedemann und Berg Filmproduktion
+DakS1E2,Staffel 1 Episode 2,,,,,2,6,DE,Berlin,"8,1",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E3,Staffel 1 Episode 3,,,,,2,6,DE,Berlin,"8,5",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E4,Staffel 1 Episode 4,,,,,2,6,DE,Berlin,"8,2",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E5,Staffel 1 Episode 5,,,,,2,6,DE,Berlin,"8,8",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E6,Staffel 1 Episode 6,,,,,2,6,DE,Berlin,9,2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E7,Staffel 1 Episode 7,,,,,2,6,DE,Berlin,"8,6",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E8,Staffel 1 Episode 8,,,,,2,6,DE,Berlin,"9,1",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E9,Staffel 1 Episode 9,,,,,2,6,DE,Berlin,"8,6",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS1E10,Staffel 1 Episode 10,,,,,2,6,DE,Berlin,"9,1",2017,"Wiedemann und Berg 
+Filmproduktion"
+DakS2,Staffel 2,,,,,2,6,DE,Berlin,,,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E1,Staffel 2 Episode 1,,,,,2,6,DE,Berlin,"8,7",2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E2,Staffel 2 Episode 2,,,,,2,6,DE,Berlin,"8,8",2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E3,Staffel 2 Episode 3,,,,,2,6,DE,Berlin,9,2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E4,Staffel 2 Episode 4,,,,,2,6,DE,Berlin,"9,4",2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E5,Staffel 2 Episode 5,,,,,2,6,DE,Berlin,"9,2",2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E6,Staffel 2 Episode 6,,,,,2,6,DE,Berlin,"9,5",2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E7,Staffel 2 Episode 7,,,,,2,6,DE,Berlin,"9,1",2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS2E8,Staffel 2 Episode 8,,,,,2,6,DE,Berlin,"9,4",2019,"Wiedemann und Berg 
+Filmproduktion"
+DakS3,Staffel 3,,,,,2,6,DE,Berlin,,,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E1,Staffel 3 Episode 1,,,,,2,6,DE,Berlin,"8,8",2020,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E2,Staffel 3 Episode 2,,,,,2,6,DE,Berlin,"8,6",2020,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E3,Staffel 3 Episode 3,,,,,2,6,DE,Berlin,"8,6",2020,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E4,Staffel 3 Episode 4,,,,,2,6,DE,Berlin,"8,9",2020,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E5,Staffel 3 Episode 5,,,,,2,6,DE,Berlin,"9,2",2020,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E6,Staffel 3 Episode 6,,,,,2,6,DE,Berlin,9,2020,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E7,Staffel 3 Episode 7,,,,,2,6,DE,Berlin,"9,4",2020,"Wiedemann und Berg 
+Filmproduktion"
+DakS3E8,Staffel 3 Episode 8,,,,,2,6,DE,Berlin,"9,6",2020,"Wiedemann un dBerg 
+Filmproduktion"
+BbO,Baran bo Odar,1,Hochschule fuer Fernsehen und Film Muenchen,HFFM,3,1,,,,,,
+MOS,Marc O Seng,1,Filmakademie Baden Württemberg,FBW,,1,,,,,,
+Hogr,Hoellgrund,,,,,2,4,DE,Schwarzwald,"6,6",2022,Studio Zentral
+Unbr,Unbroken,,,,,2,4,DE,Koeln,"6,9",2021,Nework Movie
+FrDuvoun,Freaks Du bist eine von uns,,,,,2,6,DE,Berlin,"5,4",2020,
+CluroBa,Club der roten Baender,,,,,2,6,DE,Muengersdorf,"8,1",2015,Bantry Bay Productions
+Lebe,Lerchenberg,,,,,2,2,DE,Mainz,"6,7",2013,
+DiPi,Die Pilgerin,,,,,2,6,DE,Techische Republik,"6,1",2014,MIA Film
+MB,Martin Behnke,1,Filmakademie Baden Wuerttemberg,FBW,1,1,,,,,,
+MuGa,Munich Games,,,,,2,4,DE,,"6,5",2022,Amusement Park Films
+DaQu,Das Quartett,,,,,2,4,DE,Berlin,"5,4",2019,Akzente Film und Fernsehproduktion
+Wikonian,Wir koennen nicht anders,,,,,2,2,DE,Brandenburg,"4,8",2020,DCM Productions
+LaIgmaWa,Latte Igel und der magische Wasserstein,,,,,2,2,DE,,"5,6",2019,Dreamin Dolphin Film
+DePrKr,Der Prag Krimi,,,,,2,4,DE,Prag,"5,7",2018,ARD
+DiStMa,Die Stadt und die Macht,,,,,2,6,DE,Berlin,"5,2",2016,Real Film Berlin
+WiJu,Wir sind jung Wir sind stark,,,,,2,4,DE,Halle,7,2015,UFA Fiction
+RS,Ronny Schalk,1,Filmakademie Baden Wuerttemberg,FBW,,1,,,,,,
+Ok19,Oktoberfest 1900,,,,,2,6,DE,Bavaria,"6,8",2020,Zeitsprung Pictures
+WiwoMe,Wir wollten aufs Meer,,,,,2,6,DE,Saarbruecken,"6,6",2012,UFA Fiction
+DF,Daphne Ferraro,2,Hochschule fuer Fernsehen und Film Muenchen,HFFM,,1,,,,,,
+Fly,Fly,,,,,2,6,DE,Berlin,6,2021,SevenPictures Film
+GrBu,Grave Butler,,,,,2,6,DE,,,2018,Hochschule fuer Fernsehen und Film Muenchen
+Mia,Mia,,,,,2,2,DE,,,2015,
+KS1,Staffel 1,,,,,2,4,DE,Koeln,,2022,Zeitsprung Pictures GmbH
+KS1E1,Staffel 1 Episode 1,,,,,2,4,DE,Koeln,"7,2",2022,Zeitsprung Pictures GmbH
+KS1E2,Staffel 1 Episode 2,,,,,2,4,DE,Koeln,"7,3",2022,Zeitsprung Pictures GmbH
+KS1E3,Staffel 1 Episode 3,,,,,2,4,DE,Koeln,"7,5",2022,Zeitsprung Pictures GmbH
+KS1E4,Staffel 1 Episode 4,,,,,2,4,DE,Koeln,"7,5",2022,Zeitsprung Pictures GmbH
+KS1E5,Staffel 1 Episode 5,,,,,2,4,DE,Koeln,"7,6",2022,Zeitsprung Pictures GmbH
+KS1E6,Staffel 1 Episode 6,,,,,2,4,DE,Koeln,"7,4",2022,Zeitsprung Pictures GmbH
+KS1E7,Staffel 1 Episode 7,,,,,2,4,DE,Koeln,"7,6",2022,Zeitsprung Pictures GmbH
+KS1E8,Staffel 1 Epsiode 8,,,,,2,4,DE,Koeln,"7,4",2022,Zeitsprung Pictures GmbH
+VA,Viviane Andereggen,2,Universitaet Basel,UB,3,1,,,,,,
+TaZue,Tatort Zueri braennt,,,,,2,4,CHE,Frankfurt am Main,"5,7",2020,ARD Degeto Film
+TaScho,Tatort Schoggilaebe,,,,,2,4,CHE,Frankfurt am Main,5,2021,ARD Degeto Film
+DiDr,Die drei Ausrufezeichen,,,,,2,4,DE,Muenchen,5,2019,Constantin Film
+KeCaCuOn,Keep Calm and Curry on,,,,,2,6,DE,Koeln,,2019,Network Movie Film und Fernsehproduktion
+Rumo,Rufmord,,,,,2,4,DE,Muenchen,"6,6",2018,Hager Moss Film
+KeHefuIn,Kein Herz fuer Inder,,,,,2,6,DE,Koeln,"5,4",2017,Network Movie Film und Fernsehproduktion
+HaundeNe,Hattinger und der Nebel Ein Chiemseekrimi,,,,,2,4,DE,Koeln,"6,3",2016,Network Movie Film und Fernsehproduktion
+SiSaAu,Simon sagt Auf Wiedersehen zu seiner Vorhaut,,,,,2,2,DE,Hamburg,"6,2",2015,Element e Filmproduktion
+SchuUmSchu,Schuld um Schuld,,,,,2,6,DE,Hamburg,"5,2",2014,Hamburg Media School
+HaUnDeHu,Habib und der Hund,,,,,2,2,DE,Hamburg,,2014,Hamburg Media School
+FuLo,Fuer Lotte,,,,,2,6,DE,,,2013,
+JBC,Jano Ben Chaabane,1,,,1,1,,,,,,
+DeWiKr,Der Wien Krimi Bild ermittelt Lebendig begraben,,,,,2,4,AUT,Wien,"6,1",2021,Mona Film Produktion
+Mapa,Mapa,,,,,2,2,DE,Berlin,"7,1",2020,Readymade Films
+BliErSevoWi,Blind ermittelt Die verlorenen Seelen von Wien,,,,,2,4,AUT,Wien,"5,8",2019,Mona Film Produktion
+BliErMaevoWi,Blind ermittelt Die toten Maedchen von Wien,,,,,2,4,AUT,Wien,"6,8",2018,Mona Film Produktion
+EiMaEiWa,Ein Mann eine Wahl,,,,,2,,DE,Muenchen,,2017,ProSieben
+CuNiSchu,Culpa Niemand ist ohne Schuld,,,,,2,4,DE,New York,"6,4",2017,NBCUniversal International Networks
+StuAm,Studio Amani,,,,,2,,DE,Munenchen,,2016,ProSieben
+HHCK,Hanno Hackfort,1,,,1,1,,,,,,
+GuFr,Gute Freunde Der Aufstieg des FC Bayern,,,,,2,6,DE,Babelsberg,,2023,UFA Fiction
+PaWeKi,Para We are King,,,,,2,6,DE,Muenchen,"6,7",2023,WundB Television
+TaLoisPa,Tatort Love is Pain,,,,,2,4,DE,Koeln,"6,7",2023,Ester Reglin Film
+FuFoDo,Funeral for a Dog,,,,,2,4,DE,Berlin,"6,7",2022,Flare Entertainment
+SOPo,SOKO Potsdam,,,,,2,4,DE,Koeln,"6,5",2021,Bantry Bay Productions
+SpeLi,Specialiste,,,,,2,4,CZE,Irving,"5,9",2020,D N A Production
+4Blo,4 Blocks,,,,,2,4,DE,Muenchen,"8,2",2019,WundB Television
+MoimNo,Morden im Norden,,,,,2,2,DE,Leipzig,"5,7",2018,MDR
+LaunEr,Labaule und Erben,,,,,2,2,DE,Stuttgart,"6,8",2018,SWR
+YoArWa,You Are Wanted,,,,,2,6,DE,Culver City,"6,1",2018,Amazon Studios
+KounHa,Koslowski und Haferkamp,,,,,2,2,DE,,"7,1",2014,
+VeLie,Verbotene Liebe,,,,,2,6,DE,Potsdam,"5,2",2013,UFA Serial Drama
+RK,Richard Kropf,1,Lee Strasberg Theatre und Film Institute,LSTFI,1,1,,,,,,
+WoEnRe,Wochenendrebellen,,,,,2,2,DE,Muenchen,,2023,Wiedemann und Berg Filmproduktion
+LaXMa,Last X Mas,,,,,2,3,DE,Koeln,"6,8",2022,Bantry Bay Production
+HotoDa,How to Dad,,,,,2,2,DE,Muenchen,"6,3",2022,Keshet Tresor Fiction
+DeRVoLenaWi,Der Rebell Von Leim nach Wimbledon,,,,,2,6,DE,Muenchen,"6,2",2021,Violet Pictures
+DaWiimLe,Das Wichtigste im Leben,,,,,2,2,DE,Koeln,"6,5",2019,Bantry Bay Production
+JoKL,Josephine Klick Allein unter Cops,,,,,2,2,DE,Babelsberg,"6,9",2014,UFA Fiction
+DeKna,Der Knastarzt,,,,,2,6,DE,Koeln,7,2014,ITV Studios Germany
+ThLaCo,The Last Cop How It All Began,,,,,2,2,DE,Unterfoeringen,,2013,ProSiebenSat 1 Media SE
+DeleBu,Der letzte Bulle,,,,,2,4,DE,Koeln,"7,3",2013,ITV Studios Germany
+BK,Bob Konrad,1,Universitaet der Kuenste Berlin,UDK,1,1,,,,,,
+DeklRaSo,Der kleine Rabe Socke Die Serie,,,,,2,,DE,Angouleme,"8,2",2017,2 Minutes Animation
+DaZei,Das Zeitkarussell,,,,,2,,DE,Hannover,"8,3",2015,Ambient Entertainment GmbH
+DoB,Dogs of Berlin,,,,,,4,DE,Berlin,,,
+DoBS1E1,Staffel 1 Episode 1,,,,,2,4,DE,Berlin,"7,4",2018,Syrreal Entertainment GmbH
+DoBS1E2,Staffel 1 Episode 2,,,,,2,4,DE,Berlin,"7,4",2018,Syrreal Entertainment GmbH
+DoBS1E3,Staffel 1 Episode 3,,,,,2,4,DE,Berlin,"7,5",2018,Syrreal Entertainment GmbH
+DoBS1E4,Staffel 1 Episode 4,,,,,2,4,DE,Berlin,"7,6",2018,Syrreal Entertainment GmbH
+DoBS1E5,Staffel 1 Episode 5,,,,,2,4,DE,Berlin,"7,6",2018,Syrreal Entertainment GmbH
+DoBS1E6,Staffel 1 Episode 6,,,,,2,4,DE,Berlin,"7,5",,Syrreal Entertainment GmbH
+DoBS1E7,Staffel 1 Episode 7,,,,,2,4,DE,Berlin,"7,6",,Syrreal Entertainment GmbH
+DoBS1E8,Staffel 1 Episode 8,,,,,2,4,DE,Berlin,"7,9",,Syrreal Entertainment GmbH
+DoBS1E9,Staffel 1 Episode 9,,,,,2,4,DE,Berlin,"8,3",,Syrreal Entertainment GmbH
+DoBS1E10,Staffel 1 Episode 10,,,,,2,4,DE,Berlin,"8,4",,Syrreal Entertainment GmbH
+CA,Christian Alvart,1,,,3,1,,,,,,
+SlBo,Sloborn,,,,,2,6,DE,Berlin,"6,7",2021,Syrreal Entertainment
+ZeNe,Ze Network,,,,,2,2,DE,Los Angeles,"6,1",2022,CBS Studios
+FrLa,Freies Land,,,,,2,4,DE,Berlin,"6,7",2019,Syrreal Entertainment
+AbGe,Abgeschnitten,,,,,2,4,DE,Berlin,"6,5",2018,Syrreal Entertainment
+SteiNiAu,Steig Nicht Aus,,,,,2,4,DE,Berlin,"5,8",2018,Syrreal Entertainment
+HaBrue,Halbe Brueder,,,,,2,2,DE,Universal City,"5,4",2015,Universal Pictures
+BaLa,Banklady,,,,,2,4,DE,Berlin,"6,3",2013,Syrreal Entertainment
+TaWiHa,Tatort Willkommen in Hamburg,,,,,2,4,DE,Muenchen,6,2013,Constantin Television
+TaKo,Tatort Kopfgeld,,,,,2,4,DE,Muenchen,"5,4",2014,Constantin Television
+TaDeGroSchme,Tatort Der große Schmerz,,,,,2,4,DE,Frankfurt am Main,"5,4",2016,ARD Degeto Film
+TaFeFeu,Tatort Fegefeuer,,,,,2,4,DE,Frankfurt am Main,"5,8",2016,ARD Degeto Film
+TaTschi,Tatort Tschiller Off Duty,,,,,2,4,DE,Berlin,"4,4",2016,Syrreal Entertainment
+IZ,Ipek Zuebert,,,,,1,,,,,,
+TheMo,The Mopes,,,,,2,2,DE,,6,2021,
+Ka08,Kalinka08 Melde dich bitte,,,,,2,,DE,Berlin,,2020,Studio Zentral
+WisidiWe,Wir sind die Welle,,,,,2,6,DE,Muenchen,"6,3",2019,Rat Pack Filmproduktion
+BruSchwaMa,Bruder Schwarze Macht,,,,,2,4,DE,Hamburg,"6,8",2017,Aspekt Medienproduktion
+EiAte,Ein Atem,,,,,2,6,DE,Berlin,"6,4",2015,Senator Film Koeln
+EY,Erol Yesilkaya,1,Philipps Universitaet Marburg,PUM,1,1,,,,,,
+DeGre,Der Greif,,,,,2,6,DE,Muenchen,"6,9",2023,WundB Television
+TaAlMeiJu,Tatort Alle meine Jungs,,,,,2,4,DE,Frankfurt am Main,"5,9",2014,ARD Degeto Film
+TaDaHaEnStra,Tatort Das Haus am Ende der Straße,,,,,2,4,DE,Frankfurt am Main,"7,2",2015,ARD Degeto Film
+TaHideSpie,Tatort Hinter dem Spiegel,,,,,2,4,DE,Frankfurt am Main,"6,5",2015,ARD Degeto Film
+TaEsledeTo,Tatort Es lebe der Tod,,,,,2,4,DE,Frankfurt am Main,"7,4",2016,ARD Degeto Film
+TaDieWa,Tatort Die Wahrheit,,,,,2,4,DE,Berlin,"7,3",2016,X Filme Creative Pool
+TaDeTogaLe,Tatort Der Tod ist unser ganzes Leben,,,,,2,4,DE,Berlin,"6,9",2017,X Filme Creative Pool
+TaWejealis,Tatort Wer jetzt alleine ist,,,,,2,4,DE,Muenchen,"6,4",2018,WundB Television
+TaEiTawijean,Tatort Ein Tag wie jeder andere,,,,,2,4,DE,Muenchen,"7,3",2019,Claussen Putz Filmproduktionen
+TaDaNe,Tatort Das Nest,,,,,2,,DE,Berlin,"8,7",2019,Phoenix Film
+TaPara,Tatort Parasomnia,,,,,2,4,DE,Berlin,"7,4",2020,ARD Degeto Film
+TaDaOpf,Tatort Das Opfer,,,,,2,4,DE,,"6,8",2022,
+TaMeta,Tatort Meta,,,,,2,4,DE,Muenchen,"7,6",2018,WundB Television
+Sou,Souls,,,,,2,6,DE,Muenchen,"6,9",2022,Grießendoefer Pictures
+Hau,Hausen,,,,,2,6,DE,Berlin,5,2020,Lago Film
+Exit,Exit,,,,,2,6,DE,Berlin,"6,1",2020,Sommerhaus Filmproduktione
+NoHa,Notruf Hafenkante,,,,,2,4,DE,Hamburg,"5,6",2019,Letterbox Filmproduktion
+MP,Michael Proehl,1,Filmakademie Baden Wuertemberg,FABW,2,1,,,,,,
+GeCriSto,German Crime Story,,,,,2,4,DE,Muenchen,"7,3",2023,Neue Bioskop Television
+Heustihiekai,Heute stirbt hier Kainer,,,,,2,2,DE,Frankfurt am Main,"6,4",2021,Hessischer Rundfunk
+TaImSchmege,Tatort Im Schmerz geboren,,,,,2,4,DE,Frankfurt am Main,"8,2",2014,ARD Degeto Film
+TaWeWiern,"Tatort Wer Wind erntet, saet Sturm",,,,,2,4,DE,Frankfurt am Main,"5,5",2015,ARD Degeto Film
+TaWikrieeu,Tatort Wir kriegen euch alle,,,,,2,4,DE,Dresden,"7,1",2018,Tellux Film
+DaweiKa,Das weiße Kaninchen,,,,,2,6,DE,Koeln,"6,9",2016,FFP New Media GmbH
+Schwa23uHadeTo,Schwarzach 23 und die Hand des Todes,,,,,2,4,DE,Muenchen,"6,1",2015,TV 60 Filmproduktion
+Dri,Driften,,,,,2,6,CHE,Stuttgart,"6,8",2015,Langfilm
+HSH,Henner Schulte Holtey,1,Deutsche Film und Fernsehakademie Berlin,DFFB,,1,,,,,,
+Fu,Furia,,,,,2,4,NO,Oslo,"7,1",2021,Monster Scripted
+LeSpuBe,Letzte Spur Berlin,,,,,2,4,DE,Berlin,"6,4",2014,Novafilm Fernsehproduktion
+KoevoDeu,Koenig von Deutschland,,,,,2,2,DE,Berlin,"5,9",2013,Frisbeefilms
+JC,Jan Cronauer,1,Filmakademie Baden Wuerttemberg,FABW,,1,,,,,,
+DueEiNoKri,Duenentod Ein Nordsee Krimi,,,,,2,4,DE,Berlin,"6,3",2023,MadeFor Film
+TaFriosti,Tatort Friss oder stirb,,,,,2,4,CHE,Zuerich,"6,4",2018,Schweizer Radio und Fernsehen
+TaKauMau,Tatort Katz und Maus,,,,,2,4,DE,Berlin,"6,9",2022,MadeFor Film
+DiKaeVe,Die Kaenguru Verschwoerung,,,,,2,2,DE,Berlin,"5,8",2022,X Film Creativ Pool
+LeiLa,Leisure Land,,,,,2,4,DE,Berlin,"8,8",2020,Novafilm Fernsehproduktion
+OffDaLeikeiBo,Offline Das Leben ist kein Bonuslevel,,,,,2,2,DE,Muenchen,"5,2",2016,Rat Pack Filmproduktion
+LaofGi,Land of Giants,,,,,2,,DE,Berlin,"7,1",2013,RoundhouseFilm
+RM,Ron Markus,1,Filmakademie Baden Wuerttemberg,FABW,1,1,,,,,,
+AnEl,Andere Eltern,,,,,2,2,DE,Berlin,7,2020,Eitel Sonnenschein
+BaBa,Bad Banks,,,,,2,4,DE,Berlin,"7,8",2020,Letterbox Filmproduktion
+KaFfo,Katie Fforde,,,,,2,6,DE,,5,2019,
+DeLe,Der Lehrer,,,,,2,2,DE,,"7,2",2017,Sony Pictures Film und Fernseh Produktions
+LoSchoe,Lola Schoen Kommissarin Deluxe,,,,,2,4,DE,Berlin,,2013,Opal Filmproduktion
+GH,Georg Hartmann,1,Ruhr Universitaet Bochum,RUB,,1,,,,,,
+SOKoe,SOKO Koeln,,,,,2,4,DE,Koeln,"5,4",2020,Network Movie Film und Fernsehproduktion
+ProT,Professor T,,,,,2,4,DE,Koeln,"6,8",2017,Rowboat Film und Fernsehproduktion
+DiChe,Die Chefin,,,,,2,4,DE,Koeln,"6,4",2016,Network Movie Film und Fernsehproduktion
+AR,Arend Remmers,1,,,3,1,,,,,,
+BoKiWo,Boy Kills World,,,,,2,,DE,Midrand,"6,5",2023,Nthibah Pictures
+TraFa,Traumfabrik,,,,,2,2,DE,Babelsberg,"6,5",2019,Traumfabrik Babelsberg
+RounKla,Ronny und Klaid,,,,,2,2,DE,Berlin,"5,6",2018,Dropkick Pictures
+Schnefloe,Schneefloeckchen,,,,,2,2,DE,Berlin,"6,3",2017,Lopta Film
+UnZeiije,Unsere Zeit ist jetzt,,,,,2,2,DE,Ruedersdorf,"5,2",2016,Warner Bros Filmproductions Germany
+Kry,Kryo,,,,,2,6,DE,Ludwigsburg,"6,6",2016,Filmakademie Baden Wuerttemberg
+Unplu,Unplugged,,,,,2,,CAN,,"8,2",2015,Dakota Pictures
+EnidiEn,Entscheidend ist die Entscheidung,,,,,2,,DE,Berlin,,2015,Lopta Film
+Wisihi,Wir sind hier Alba Berlin,,,,,2,,DE,Berlin,,2013,Lopta Film
+Aubli,Augenblick,,,,,2,6,DE,Berlin,6,2013,Lopta Film
+UN,Unorthodox,,,,,2,6,DE,Berlin,8,2020,Studio Airlift
+UNS1E1,Staffel 1 Episode 1,,,,,2,6,DE,Berlin,"7,8",2020,Studio Airlift
+UNS1E2,Staffel1 Episode 2,,,,,2,6,DE,Berlin,8,2020,Studio Airlift
+UNS1E3,Staffel 1 Episode 3,,,,,2,6,DE,Berlin,7,2020,Studio Airlift
+UNS1E4,Staffel 1 Episode 4,,,,,2,6,DE,Berlin,"8,2",2020,Studio Airlift
+MaS,Maria Schrader,2,,,3,1,,,,,,
+ShSa,She Said,,,,,2,6,JPN,New York,"7,3",2022,Universal Pictures
+IcbideMe,Ich bin dein Mensch,,,,,2,2,DE,Berlin,"7,1",2021,Letterbox Filmproduktion
+VodeMo,Vor der Morgenroete,,,,,2,6,AUS,Bahia,"6,7",2016,X Filme Creative Pool
+AW,Anna Winger,2,Columbia University New York,CUNY,1,1,,,,,,
+TrAn,Transatlantic,,,,,2,6,DE,Marseille,"6,6",2023,Studio Airlift
+CoCa,Comrades und Cash Geheime Geschaefte unter dem Eisernen Vorhand,,,,,2,,,,"7,5",2018,MobyDok Medienproduktion
+De83,Deutschland 83,,,,,2,6,DE,Berlin,"8,1",2015,RTL
+AK,Alexa Karolinksi,2,School of Visual Arts,SVA,1,1,,,,,,
+HK,Henning Kamm,1,Universitaet Lueneburg,UL,3,1,,,,,,
+EvFcCr,Everyone is Fcking Crazy,,,,,2,6,DE,,"7,2",2023,Real Film Berlin
+ScHu,Schlafende Hunde,,,,,2,4,DE,Berlin,"6,4",2023,Real Film Berlin
+3eiSt,3 einhalb Stunden,,,,,2,4,DE,,"6,3",2021,Real Film Berlin
+AuDeToBu,Auckland Detectives Toedliche Bucht,,,,,2,4,NZL,Auckland,"6,8",2019,Letterbox Filmproduktion
+PaWo7,Papa auf Wolke 7,,,,,2,2,DE,Berlin,"5,6",2020,Real Film Berlin
+Po110,Polizeiruf 110,,,,,2,6,DE,,"6,4",1971,Deutscher Fernsehfunk
+VoBiBi,Von Bienen und Blumen,,,,,2,,DE,Gerswalde,6,2019,Detailfilm
+MoPion,Monsieur Pierre geht online,,,,,2,2,FR,Koeln,"6,3",2017,Ici et la Productions
+Erlo,Erloesung,,,,,2,4,DNK,Romo,7,2016,Zentropa Entertainments
+BeMe,Berlin Metanoia,,,,,2,6,DE,Berlin,"7,5",2016,Detailfilm
+OnTwTh,One Two Three,,,,,2,,ARM,,"7,2",2015,Bars Media
+Szgy,Szerdai gyerek,,,,,2,6,HUN,,"6,7",2015,Popfilm
+Dina,Dissonance,,,,,2,6,DE,,"6,9",2015,FrameboX
+Dela,Delay,,,,,2,2,DE,,"6,8",2014,
+II,II,,,,,2,6,,Sterea Ellada,"6,2",2014,Horsefly Productions
+Tekp,Telekomando,,,,,2,2,DE,,"7,1",2014,Detailfilm
+Foev,Forever,,,,,2,6,DE,Berlin,"7,6",2014,Detailfilm
+Kuzu,Kuzu,,,,,2,6,TUR,Erzincan,"6,6",2015,Institute for the Readjustment of Clocks
+FuBe,Future Beach,,,,,2,6,BRA,Berlin,"6,3",2014,Coracao da Selva
+Sama,Sa mamom,,,,,2,6,BIH,Sarajevo,6,2013,SCCA pro ba
+KeibeBe,K ein besonderes Beduerfnis,,,,,2,,ITA,Italien,"7,3",2014,Detailfilm
+Kadra,Kathedralen,,,,,2,,DE,Ordos,"8,1",2013,Detailfilm
+NaGa,Nashorn im Galopp,,,,,2,2,DE,Berlin,"7,7",2013,Detailfilm
+DKAI,Die Kaiserin,,,,,2,6,DE,Berlin,"7,8",2022,Sommerhaus Serien
+DKS1E1,Staffel 1 Episode 1,,,,,2,6,DE,Berlin,"7,6",2022,Sommerhaus Serien
+DKS1E2,Staffel 1 Episode 2,,,,,2,6,DE,Berlin,"7,6",2022,Sommerhaus Serien
+DKS1E3,Staffel 1 Episode 3,,,,,2,6,DE,Berlin,"7,6",2022,Sommerhaus Serien
+DKS1E4,Staffel 1 Episode 4,,,,,2,6,DE,Berlin,"7,7",2022,Sommerhaus Serien
+DKS1E5,Staffel 1 Episode 5,,,,,2,6,DE,Berlin,8,2022,Sommerhaus Serien
+DKS1E6,Staffel 1 Episode 6,,,,,2,6,DE,Berlin,"8,3",2022,Sommerhaus Serien
+FC,Florian Cossen,1,Filmakademie Baden Wuerttemberg,FBW,2,1,,,,,,
+DeNsu,Mitten in Deutschland NSU,,,,,2,4,DE,,"7,3",2016,
+CoHe,Coconut Hero,,,,,2,2,DE,,"6,3",2015,UFA Fiction
+KG,Katrin Gebbe,2,Academy of Visual Arts Enschedde,AoVa,3,1,,,,,,
+PeBl,Pelikanblut,,,,,2,6,BGR,,"6,1",2019,Junafilm
+FiGuEv,The Field Guide to Evil,,,,,2,,USA,Istanbul,"4,8",2018,Aurum Film
+MiHi,Fuenf Minuten im Himmel,,,,,2,4,DE,Freiburg,"5,1",2016,Zieglerfilm Baden Baden GmbH
+ToTa,Tore tanzt,,,,,2,4,DE,Hamburg,"6,9",2013,Junafilm
+KE,Katharina Eyssen,2,Hochschule fuer Fernsehen und Film Drehbuch und Dramaturgie,HFFDD,1,1,,,,,,
+BaKr,Der Barcelona Krimi,,,,,2,4,DE,Barcelona,"6,3",2022,
+ZeGe,Zeit der Geheimnisse,,,,,2,6,DE,,"6,5",2019,Netflix Studios
+RaDa,Rate your Date,,,,,2,2,DE,Berlin,"5,6",2019,SevenPictures Film
+RoZae,Rockstars zaehmt man nicht,,,,,2,2,DE,,"5,6",2017,Pantaleon Films
+DoRo,Ein Dorf rockt ab,,,,,2,2,DE,Brandenburg,"5,5",2017,Amalia Film
+SeWe,Seitenwechsel,,,,,2,2,DE,Berlin,"5,5",2016,Odeon Fiction
+HeBl,Heute bin ich blond,,,,,2,6,BEL,Hamburg,"6,8",2013,Goldkind Filmproduktion
+BL,Bernd Lange,1,Filmakademie Baden Wuerttemberg,FBW,2,1,,,,,,
+TaFa,Tatort In der Familie,,,,,2,4,DE,,7,2020,ARD Degeto
+TaBlAn,Tatort Die Blicke der Anderen,,,,,2,4,DE,Gaggenau,"6,2",2022,
+TaHoTo,Tatort Hochamt fuer Toni,,,,,2,4,DE,Arberg,"6,3",2022,
+DaNe,Das Netz,,,,,2,4,DE,,"6,1",2022,Hugofilm Features
+DeKr,Der Kriminalist,,,,,2,4,DE,Berlin,7,2020,Monaco Film GmbH
+UeLae,Der Ueberlaeufer,,,,,2,6,DE,Polen,"6,8",2020,Dreamtool Entertainment
+CrDe,Criminal Deutschland,,,,,2,4,DE,,"7,6",2020,Netflix Studios
+Po110Si,Polizeiruf 110 Der Fall Sikorska,,,,,2,4,DE,,"6,4",2018,
+DaVe,Das Verschwinden,,,,,2,4,CZE,,"7,3",2017,23 5 Filmproduktion GmbH
+KlLue,Eine kleine Luege,,,,,2,2,DE,Berlin,"7,2",2017,Dreamtool Entertainment
+ZwZwZe,Zweimal zweites Leben,,,,,2,6,DE,Muenchen,"5,9",2016,Dreamtool Entertainment
+AkGr,Akte Grueninger,,,,,2,6,CHE,St Gallen,"6,8",2014,SRF
+JN,Janna Nandzik,2,,,1,1,,,,,,
+DrCk,Druck,,,,,2,6,DE,,"7,8",2018,Bantry Bay Productions
+JeRk,Jerks,,,,,2,2,DE,Potsdam,"8,5",2018,Pyjama Pictures
+AbKa,About Kate,,,,,2,2,FRA,Berlin,"7,7",2013,Ulmen Television
+JL,Jochen Laube,1,Filmakademie Baden Wuerttemberg,FBW,2,1,,,,,,
+StTr,Die stillen Trabanten,,,,,2,6,DE,Leipzig,"6,5",2022,Sommerhaus Filmproduktion
+SoSc,Ich bin Sophie Scholl,,,,,2,,DE,,"6,7",2021,Sommerhaus Filmproduktion
+HeAg,Hello Again Ein Tag fuer immer,,,,,2,2,DE,,"5,7",2020,Sommerhaus Filmproduktion
+BeAl,Berlin Alexanderplatz,,,,,2,4,NLD,,"6,9",2020,Sommerhaus Filmproduktion
+HiKa,Als Hitler das rosa Kaninchen stahl,,,,,2,6,DE,Berlin,7,2019,Sommerhaus Filmproduktion
+WaUm,Was uns nicht umbringt,,,,,2,6,DE,Hamburg,"6,1",2018,Cine Plus
+InGae,In den Gaengen,,,,,2,6,DE,Bitterfeld,"6,9",2018,Sommerhaus Filmproduktion
+TaRoSc,Tatort Der rote Schatten,,,,,2,4,DE,,"6,5",2017,ARD Degeto Film
+ZaFr,Zapped Frank Zappa in seinen eigenen Worte,,,,,2,,FRA,,"7,3",2016,UFA Fiction
+MaeEx,Maengelexemplar,,,,,2,2,DE,Berlin,"5,9",2016,UFA Fiction
+IcWe,Ich bin dann mal weg,,,,,2,2,DE,,"6,1",2015,UFA Fiction
+GrEk,Grzimek,,,,,2,6,DE,,"6,6",2015,UFA Fiction
+KrWe,Kreuzweg,,,,,2,6,FRA,Berlin,"7,4",2014,ARTE
+16xDe,16x Deutschland Menschen Orte Geschichten,,,,,2,,DE,,"7,6",2013,Bayrischer Rundfunk
+VeFr,Verratene Freunde,,,,,2,6,DE,Stuttgart,"6,4",2013,ARTE
+JaLe,5 Jahre Leben,,,,,2,6,FRA,Berlin,"6,8",2013,teamWorx Television und Film
+FM,Fabian Maubach,1,Filmakademie Baden Wuerttemberg,FBW,2,1,,,,,,
+BDC,The Billion Dollar Code,,,,,2,6,DE,Berlin Budapest,8,2021,Kundschafter Filmproduktion
+BDCS1E1,Staffel 1 Episode 1,,,,,2,6,DE,Berlin Budapest,8,2021,Kundschafter Filmproduktion
+BDCS1E2,Staffel 1 Episode 2,,,,,2,6,DE,Berlin Budapest,8,2021,Kundschafter Filmproduktion
+BDCS1E3,Staffel 1 Episode 3,,,,,2,6,DE,Berlin Budapest,"8,2",2021,Kundschafter Filmproduktion
+BDCS1E4,Staffel 1 Episode 4,,,,,2,6,DE,Berlin Budapest,"8,4",2021,Kundschafter Filmproduktion
+RT,Robert Thalheim,1,Freie Uni Berlin,FU,2,1,,,,,,
+TaGo,Tatort Goldbach,,,,,2,4,DE,,"6,1",2017,Ard
+TaNiWa,Tatort Nichts als die Wahrheit 1,,,,,2,4,DE,Berlin,"6,6",2023,
+TaNiAlWa,Tatort Nichts als die Wahrheit 2,,,,,2,4,DE,Berlin,"6,5",2023,
+TkKg,TKKG,,,,,2,2,DE,Ruedersdorf,"5,8",2019,Warner Bros Filmproductions Germany
+KuFr,Kundschafter des Friedens,,,,,2,2,DE,Gran Canaria,"5,9",2017,Majestic Filmverleih
+PoKaPr,Polizeiruf 110 Kaefer und Prinzessin,,,,,2,4,DE,Klein Ziethen,"6,2",2014,
+ElTern,Eltern,,,,,2,2,DE,Berlin,"6,7",2013,Kundschafter Filmproduktion
+OZ,Oliver Ziegenbalg,1,Universitaet Karlsruhe,UK,1,1,,,,,,
+RoAd,Roads,,,,,2,6,FRA,Tangier,"6,3",2019,Missing Link Films
+KmH,25 km h,,,,,2,2,DE,Fußbach,"7,2",2018,Mythos Film
+BlDaLe,Mein Blind Date mit dem Leben,,,,,2,2,DE,Muenchen,"7,1",2017,Ziegler Cinema
+BeLeSo,Becks letzter Sommer,,,,,2,2,DE,Budapest,"5,8",2015,Claussen Woebke Putz Filmproduktion
+MuWe,Frau Mueller muss weg,,,,,2,2,DE,Koeln,"6,2",2015,Constantin Film
+AB,Andreas Banz,1,Filmuniversitaet Babelsberg,HFF,,1,,,,,,
+KiDa,KIDA Von Beirut nach Berlin,,,,,2,,DE,Berlin,,2023,ARD TV
+HaSy,Das Hamlet Syndrom,,,,,2,,POL,Lviv,"7,4",2022,Balapolis
+AlMa,Almania,,,,,2,2,DE,,"6,8",2021,DCM Pictures
+HoTa,Hoellental,,,,,2,4,DE,,"8,4",2021,Kundschafter Filmproduktion
+BiDa,Big Dating,,,,,2,2,DE,,"7,5",2020,Kundschafter Filmproduktion
+WaKn,Wagenknecht,,,,,2,,DE,Bielefeld,"6,3",2020,Kundschafter Filmproduktion
+MdB,Eichwald MdB,,,,,2,2,DE,,"7,3",2015,Kundschafter Filmproduktion
+BrScNo,Meine Brueder und Schwestern im Norden,,,,,2,,DE,Pyongyang,"7,2",2016,Kundschafter Filmproduktion
+VeVo,Verliebt verlobt verloren,,,,,2,,DE,,"7,6",2015,Kundschafter Filmproduktion
+SB,Stephan Barth,,,,,,,,,,,
+EvLu,Evolution,,,,,2,6,DE,Berlin,"6,4",2021,Match Factory Production
+BiToFr,Bis wir tot sind oder frei,,,,,2,6,CHE,Zuerich,6,2020,ARTE
+StRe,Die Stimme des Regenwaldes,,,,,2,6,CHE,Borneo,"7,5",2019,A Film Company
+BrEr,Brimstone Erloese und von dem Boesen,,,,,2,6,NLD,Domahaza,7,2016,N279 Entertainment
+PoTo,Polder Tokyo Heidi,,,,,2,6,CHE,,"4,9",2015,Dschoint Ventschr Filmproduktion AG
+JeNi,Jetzt oder Nie,,,,,2,2,CHE,Zuerich,"5,9",2014,Vega Film
+ViGr,Viktoria A Tale of Grave and Greed,,,,,2,6,CHE,Budapest,"6,2",2014,HesseGreutert Film AG
+GeHe,Geld her oder Autsch,,,,,2,2,DE,Budapest,"3,7",2013,Proton Cinema
+ClGe,Clara und das Geheimnis der Baeren,,,,,2,,CHE,Bavaria,"5,9",2013,HesseGreutert Film AG
+SBP,Szandra Barbara Poszar,,Eoetvoes Lorand University,ELB,,2,4,DE,Madrid,"7,6",2019,
+SaSe,Saint Seiya Die Krieger des Zodiac Der Film,,,,,2,6,USA,Budapest,"4,4",2023,Stage 6 Films
+MiSo,Midsommar,,,,,2,6,USA,Budapest,"7,1",2010,A24
+TeRa,Terminal Rache war nie schoener,,,,,2,2,IRL,Budapest,"5,3",2018,Beagle Pug Films
+RoWi,A Rose in Winter,,,,,2,6,GBR,Budapest,"6,1",2018,
+TePi,Terapia,,,,,2,6,HUN,Budapest,"8,7",2017,
+CG,Criminal Germany,,,,,2,4,DE,Madrid,"8,1",2019,Idiotlamp Productions
+CGS1E1,Staffel 1 Episode 1,,,,,2,4,DE,Madrid,"8,1",2019,Idiotlamp Productions
+CGS1E2,Staffel 1 Episode 2,,,,,2,4,DE,Madrid,"7,4",2019,Idiotlamp Productions
+CGS1E3,Staffel 1 Episode 3,,,,,2,4,DE,Madrid,"8,3",2019,Idiotlamp Productions
+GK,Goerge Kay,1,"Wellington College, Berkshire",WC,,1,,,,,,
+Hija,Hijack,,,,,2,6,GBR,London,"7,4",2023,60Fourty Films
+Lupi,Lupin,,,,,2,4,FRA,West Hollywood,"7,5",2021,Gaumont Television
+CriVeKoe,Criminal Vereinigtes Koenigreich,,,,,2,4,GBR,London,"7,7",2020,Idiotlamp Productions
+CriFra,Criminal Frankreich,,,,,2,4,FRA,,"7,2",2019,
+CriSpa,Criminal Spanien,,,,,2,4,ESP,,"6,9",2019,
+StaJu,Stage Jungesellenabscheid,,,,,2,2,GBR,London,7,2016,Idiotlamp Production
+JFS,Jim Field Smith,1,"Wellington College, Berkshire, University of Birmingham","WC , UB",,1,,,,,,
+Livi,Litvinenko,,,,,2,6,GBR,Koeln,"7,3",2022,ITV Studios
+TruSe,Truth Seekers,,,,,2,2,GBR,Culver City,7,2020,Amazon Studios
+TheWroMa,The Wrong Mans,,,,,2,2,GBR,London,"4,6",2018,BBC Studios
+WreVoAb,Wrecked Voll abgesuertzt,,,,,2,2,GBR,Los Angeles,"7,3",2018,Haven Entertainment
+DetheGu,Defending the Guilty,,,,,2,2,GBR,London,"7,1",2018,Big Talk Productions
+Pea,Pearl,,,,,2,2,GBR,Burbank,,2016,ABC Signature
+TheWroMaFaZeFaO,The Wrong Mans Falsche Zeit falscher Ort,,,,,2,2,GBR,London,"7,7",2014,BBC Studios
+SH,Sebastian Heeg,1,Filmakademie Baden Wuerttemberg,FBW,1,1,,,,,,
+Grosta,Großstadtrevier,,,,,2,4,DE,Hamburg,"6,2",2022,Studio Hamburg Produktion
+FreKoe,Fremdkoeper,,,,,2,6,DE,Ludwigsburg,"6,5",2015,Venice Pictures
+OH,Oliver Hirschbiegl,1,Hamburger Hochschule fuer Bildende Kuenste,HBK,3,1,,,,,,
+Unwa,Unwanted,,,,,2,6,DE,Mailand,,2023,Sky Italia
+TaUimgediNa,Tatort Und immer gewinnt die Nacht,,,,,2,4,DE,Frankfurt am Main,"5,8",2021,ARD Degeto Film
+DeMa,Der Maler,,,,,2,,DE,,6,2021,
+Bill,Billions,,,,,2,6,USA,,"8,3",2017,Showtime Entertainment
+DegleHi,Der gleiche Himmel,,,,,2,6,DE,Babelsberg,"7,4",2017,UFA Fiction
+ElErhaediWeve,Elser Er haette die Welt veraendert,,,,,2,6,DE,Muenchen,7,2015,Lucky Bird Pictures
+TuWaSpi,Turn Washingtons Spies,,,,,2,6,USA,New York,"8,1",2014,AMC Studios
+Dia,Diana,,,,,2,6,UBR,London,"5,6",2013,Ecosse Films
