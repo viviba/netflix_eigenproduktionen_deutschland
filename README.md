@@ -14,7 +14,6 @@ relationship =
 
 3 Executive Producer
 
-4 Production Company				
 
 # Nodelist					
 id = Kürzel	
@@ -73,5 +72,5 @@ country = Kürzel Herkunftsland der Episode
 location = Ort national (als Eigenname codiert)
 
 Bearbeitungshinweise					
-Wir erstellen ein Two-Mode-Netzwerk, weil wir sowohl Akteur/innen-Knoten, als auch Serien-Knoten im Netzwerk haben. Dazu brauchen wir Infos über Regisseur/innen, Autor/innen und die Produktionsfirmen. Diese erheben wir auf der Website "IMDb", eine Filmdatenbank. Wichtig ist für uns aber auch, wo die Akteur/innen studiert haben und ob sie Preise für ihre Arbeit bekommen haben. Infos zur Serie, wie z.B. das Genre, das Erscheinungsjahr oder das Rating bekommen wir auf "Rotten Toamtoes", eine Website, die vor allem Filmkritiken und News veröffentlicht. 
-Sollte unser Netzwerk zu wenig Daten beinhalten, wollen wir es erweitern: Zum Beispiel durch die Vorerfahrungen der beteiligten Regisseur/innen. 				
+Wir erstellen ein Two-Mode-Netzwerk, weil wir sowohl Akteur/innen-Knoten, als auch Serien-Knoten im Netzwerk haben. Dazu brauchen wir Infos über Regisseur/innen, Autor/innen und die Produktionsfirmen. Diese erheben wir auf der Website "IMDb", eine Filmdatenbank. Wichtig ist für uns aber auch, wo die Akteur/innen studiert haben und ob sie Preise für ihre Arbeit bekommen haben. Infos zur Serie, wie z.B. das Genre, das Erscheinungsjahr oder das Rating bekommen wir ebenfalls auf "IMDb".
+Zusätzlich dazu erheben wir noch die Produktionen, an denen unsere Akteur*innen in den letzten 10 Jahren noch mitgearbeitet haben.
