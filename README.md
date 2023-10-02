@@ -63,7 +63,7 @@ genre =
 
 7 young adult		
 
-rating = durchschnittliche Zuschauerquote der Episode in Prozent	
+rating = IMDb-Bewertung als Kommazahl von ingesamt 10	
 
 year = Erscheinungsjahr	der Episode
 
