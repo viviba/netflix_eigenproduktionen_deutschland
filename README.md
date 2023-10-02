@@ -40,7 +40,6 @@ awards =
 
 3 = über 5 Preise
 
-
 type =
 
 1 Akteur/innen 
@@ -61,16 +60,18 @@ genre =
 
 6 drama 
 
-7 young adult		
-
-rating = IMDb-Bewertung als Kommazahl von ingesamt 10	
-
-year = Erscheinungsjahr	der Episode
+7 young adult	
 
 country = Kürzel Herkunftsland der Episode 
 
 location = Ort national (als Eigenname codiert)
 
+rating = IMDb-Bewertung als Kommazahl von ingesamt 10	
+
+year = Erscheinungsjahr	der Episode
+
+Produktionsfirma = Produktionsfirma der/des jeweilige/n Serie/Episode/Film
+
 Bearbeitungshinweise					
-Wir erstellen ein Two-Mode-Netzwerk, weil wir sowohl Akteur/innen-Knoten, als auch Serien-Knoten im Netzwerk haben. Dazu brauchen wir Infos über Regisseur/innen, Autor/innen und die Produktionsfirmen. Diese erheben wir auf der Website "IMDb", eine Filmdatenbank. Wichtig ist für uns aber auch, wo die Akteur/innen studiert haben und ob sie Preise für ihre Arbeit bekommen haben. Infos zur Serie, wie z.B. das Genre, das Erscheinungsjahr oder das Rating bekommen wir ebenfalls auf "IMDb".
-Zusätzlich dazu erheben wir noch die Produktionen, an denen unsere Akteur*innen in den letzten 10 Jahren noch mitgearbeitet haben.
+Wir erstellen ein Two-Mode-Netzwerk, weil wir sowohl Akteur/innen-Knoten, als auch Serien-Knoten im Netzwerk haben. Dazu brauchen wir Infos über Regisseur/innen, Autor/innen und die Produzent/innen. Diese erheben wir auf der Website "IMDb", eine Filmdatenbank. Wichtig ist für uns aber auch, wo die Akteur/innen studiert haben und ob sie Preise für ihre Arbeit bekommen haben. Infos zur Serie, wie z.B. das Genre, das Erscheinungsjahr oder das Rating bekommen wir ebenfalls auf "IMDb".
+Zusätzlich dazu erheben wir noch die Produktionen, an denen unsere Akteur/innen in den letzten 10 Jahren noch mitgearbeitet haben.
