@@ -6,7 +6,7 @@ from = Akteur/innen
 
 to = Serien 	
 
-relationship =
+relation =
 
 1 Director 
 
