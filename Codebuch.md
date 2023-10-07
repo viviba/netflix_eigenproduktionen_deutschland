@@ -14,6 +14,8 @@ relationship =
 
 3 Executive Producer
 
+4 Serie
+
 
 # Nodelist					
 id = Kürzel	
@@ -44,7 +46,9 @@ type =
 
 1 Akteur/innen 
 
-2 Serien	
+2 Episode
+
+3 Serie
 
 genre = 
 
