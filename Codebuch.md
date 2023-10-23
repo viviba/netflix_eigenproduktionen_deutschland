@@ -16,6 +16,8 @@ relation =
 
 4 Serie
 
+5 Tatort-Verbindungen
+
 
 # Nodelist					
 id = Kürzel	
