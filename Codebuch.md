@@ -16,7 +16,11 @@ relation =
 
 4 Serie
 
-5 Tatort-Verbindungen
+5 Zusammen studiert 
+
+6 Romantische Beziehung (Paar, Heirat, etc.) 
+
+7 Geschäftliche Beziehung (Produktionsgesellschaft)
 
 
 # Nodelist					
