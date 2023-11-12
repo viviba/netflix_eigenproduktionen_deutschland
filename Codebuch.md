@@ -22,6 +22,8 @@ relation =
 
 7 Geschäftliche Beziehung (Produktionsgesellschaft)
 
+8 Häufig zusammengearbeitet
+
 
 # Nodelist					
 id = Kürzel	
