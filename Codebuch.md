@@ -4,7 +4,7 @@
 
 from = Akteur/innen  
 
-to = Serien 	
+to = Serien/ Akteur/innen 	
 
 relation =
 
