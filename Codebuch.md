@@ -24,6 +24,8 @@ relation =
 
 8 Häufig zusammengearbeitet
 
+9 Tatort
+
 
 # Nodelist					
 id = Kürzel	
