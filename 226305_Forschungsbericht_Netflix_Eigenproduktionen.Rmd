@@ -1,0 +1,1845 @@
+---
+title: "226305 Forschungsbericht Deutsche Netflix-Eigenproduktionen"
+author: "md155, lf089, jk271, hw050, vb063"
+date: "2023-10-29"
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+  word_document:
+    toc: yes
+    toc_depth: '3'
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: 3
+    number_sections: yes
+subtitle: Analyse des Beziehungsnetzwerks eines Semesters
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+**Abstract und Keywords**\
+Der vorliegende Forschungsbericht zielt darauf ab, die Zusammenhänge
+zwischen den Regisseur\*innen, Drehbuchautor\*innen und Produzent\*innen
+der elf erfolgreichsten deutschen Netflix-Produktionen zu analysieren.
+Bei dem Gesamtnetzwerk handelt es sich um ein ungerichtetes,
+ungewichtetes two-mode Netzwerk, welches insgesamt über 551 Knoten und
+1153 Kanten verfügt. Die Beziehungsdimensionen umfassen mehrere
+Netzwerke: Studium an derselben Bildungseinrichtung, romantische
+Beziehungen, geschäftliche Beziehungen und häufige Zusammenarbeit. Die
+Analyse zeigt, dass wer schon mal gemeinsam produziert hat, öfter
+zusammenarbeitet, geschäftliche Beziehungen pflegt und sogar im privaten
+Kontext Kontakt hat.
+
+Keywords: Netzwerkanalyse, Netflixproduktionen, Erfolgsanalyse,
+Streaming-Dienste
+
+# Einleitung
+
+Mithilfe dieses Netzwerks werden die wichtigsten Akteur\*innen der elf
+erfolgreichsten deutschen Netflix Eigenproduktionen untersucht. Unter
+anderem liegt dabei ein besonderer Fokus auf den Verbindungen zwischen
+den jeweiligen Akteur\*innen. Davon sind nicht nur viele über ihren Job,
+sondern auch privaten Leben miteinander vernetzt oder haben an derselben
+Universität studiert. Diese haben wir uns ebenfalls genauer angeschaut,
+um herauszufinden, wo die meisten Akteur\*innen studiert haben. Dabei
+kommt es häufig zur Bildung von Cliquen, welche wir mithilfe unseres
+Netzwerks ebenfalls genauer untersuchen wollten. Außerdem wurden
+verschiedene Teilnetzwerke gebildet und die jeweiligen Zentralitätsmaße
+analysiert, um wichtige Akteur\*innen herauszufiltern. Die Teilnetzwerke
+wurden zur Veranschaulichung entsprechend visualisiert. Auch die Rolle
+von Netflix innerhalb unseres Netzwerks hat uns interessiert: Produziert
+der Streamingdienst seine Eigenproduktionen hauptsächlich selbst oder
+kauft er sich stattdessen bei besonders beliebten und erfolgreichen
+Produktionsfirmen ein? Um diese und weitere Thesen genauer zu
+untersuchen, wurden verschiedene Attribute festgelegt, welche im
+Codebuch genauer erläutert werden.
+
+# Vorarbeiten und vergleichbare Studien
+
+## Forschungsstand
+
+Zum Netflix-Universum gibt es noch keine Netzwerkanalysen, weshalb sich
+das Forschungsdesign an einer Studie zum Thema Koproduktionsbeziehungen
+in der Filmbranche auf dem US-Markt anlehnt. Die Netzwerkanalyse
+„Producing Quality: A Social Network Analysis of Coproduction
+Relationships in High Grossing Versus Highly Lauded Films in the U.S.
+Market" (Jade L. Miller, 2011) beschäftigt sich mit
+Filmfinanzierungsstrukturen und kommt zu dem Ergebnis, dass
+professionelle und persönliche Beziehungen die Struktur stark
+mitdefinieren.
+
+Miller vergleicht zwei Netzwerke miteinander: Das Netzwerk 1 stellt
+Koproduktionsbeziehungen zwischen Produktionsfirmen von Filmen mit hohen
+Einspielergebnissen dar, während das Netzwerk 2 die Beziehungen zwischen
+Produktionsfirmen hochgelobter Filme im selben Zeitraum visualisiert.
+
+## Arbeitshypothesen
+
+Wir gehen von folgenden Arbeitshypothesen aus:
+
+H1: Netflix arbeitet bevorzugt mit bereits erfolgreichen Menschen aus
+der Filmbranche zusammen.
+
+H2: Viele Drehbuchautor\*innen, Regisseur\*innen und Produzent\*innen
+sind auch im privaten Leben miteinander vernetzt.
+
+H3: Netflix produziert seine "Eigenproduktionen" nicht immer selbst,
+sondern kauft sich stattdessen bei besonders beliebten und erfolgreichen
+Produktionsfirmen ein.
+
+H4: Die meisten Drehbuchautor\*innen, Regisseur\*innen und
+Produzent\*innen haben an der Filmakademie Baden Württemberg studiert.
+
+H5: Der Tatort ist eine wichtige Karrierestation für erfolgreiche
+Drehbuchautor\*innen/ Regisseur\*innen, Produzent\*innen.
+
+H6: Viele Drehbuchautor\*innen, Regisseur\*innen, Produzent\*innen
+arbeiten bei mehreren Produktionen zusammen.
+
+H7: Männer dominieren die Filmbranche auch bei Netflix.
+
+Um diese These so gut wie möglich zu untersuchen und zu belegen, haben
+wir zwei Unterthese aufgestellt:
+
+H7a: Es gibt mehr Männer als Frauen unter den Filmmachenden.
+
+H7b: Männer produzieren hauptsächlich mit Männern.
+
+H7c: Männer produzieren hauptsächlich Crime und Frauen nur Drama.
+
+H8: München hat Köln als Medienstadt überholt.
+
+## Datenzugang, -bereinigung und Codebuch
+
+Der Datensatz ist unter
+[Github](https://github.com/viviba/netflix_eigenproduktionen_deutschland/tree/main)
+verfügbar.
+
+Das
+[Codebuch](https://github.com/viviba/netflix_eigenproduktionen_deutschland/blob/main/Codebuch.md)
+beschreibt die Variablen und Relationen des Netzwerks und ist ebenfalls
+auf Github hinterlegt.
+
+Als primäre Quelle für den Datenzugang haben wir die Internet Movie
+Database (IMDb) festgelegt. Die IMDb ist eine amerikanische Datenbank,
+in der Filme, Fernsehserien, Videoproduktionen und Computerspiele
+dokumentiert werden. So konnten wir nahezu alle Attribute über
+Regisseur\*innen, Drehbuchautor\*innen*,* und Produzent\*innen der
+selektierten Serien erlangen. Für die erste Datenerhebung, beschlossen
+wir, nur die zehn erfolgreichsten Serien aus deutscher Netflix
+Produktion zu erheben. Diese Eingrenzung war nötig, da die Datenmenge
+andernfalls zu groß gewesen wäre. Da zwei Serien gleich im IMDb-Ranking
+abschnitten, wurde aus der Top 10, die Top 11. Jedes Teammitglied hat
+dann die Daten von jeweils zwei Serien erhoben. Dabei wurden unsere
+festgelegten Attribute in die Nodelist eingetragen. In die Edgelist
+haben wir sowohl die Beziehungen zwischen den Akteur\*innen und den
+Serien eingetragen, als auch die zwischen den Akteur\*innen. Daraufhin
+wurde auf potenzielle Fehlerquellen, wie Kommafehler, Leerzeichen,
+Umlaute oder Sonderzeichen kontrolliert, bis die Daten fehlerfrei
+eingetragen waren und die erste Visualisierung des Netzwerks ausgeführt
+werden konnte.
+
+Zusätzlich dazu haben wir noch die Produktionen, an denen unsere
+Akteur\*innen in den letzten 10 Jahren noch mitgearbeitet haben,
+miterhoben. Dadurch wollten wir die Zusammenhänge zwischen der Netflix
+Eigenproduktionen in Deutschland und anderen deutschen Produktionen
+genauer analysieren. Für den Datenzugang nutzten wir hierfür wieder
+IMDb.
+
+# Analyse und Interpretation
+
+## Das Gesamtnetzwerk
+
+Das Gesamtnetzwerk umfasst 551 Knoten und 1153 Beziehungen (siehe
+igraph-Objekt). Es ist ungerichtet und ungewichtet.
+
+```{r Gesamtnetzwerk erstellen, include=FALSE}
+options(repos = c(CRAN = "https://cran.rstudio.com"))
+library(igraph)
+install.packages("knitr")
+install.packages("pandoc")
+
+# Einlesen der Edge- und Nodelist
+el <- read.csv("https://raw.githubusercontent.com/viviba/netflix_eigenproduktionen_deutschland/main/Edgelist_Netflix.csv", header=T, as.is=T, sep = ",")
+
+nodes <- read.csv("https://raw.githubusercontent.com/viviba/netflix_eigenproduktionen_deutschland/main/Nodelist_Netflix.csv", header=T, as.is=T, sep = ",")
+
+# Workaround für Teilnetzwerke
+el$analysis_study_together <- el$relation == 5
+el$analysis_are_together <- el$relation == 6
+el$analysis_work_together <- el$relation == 7
+
+# Matrix erstellen
+edgematrix <-as.matrix(el)
+
+# Zusammenführen von Edge- und Nodelist als igraph-Objekt nt
+nt <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
+
+# Gesamtnetzwerk
+ecount(nt)
+vcount(nt)
+
+# Übersicht über das Netzwerk
+nt
+```
+
+```{r Beschreibung des Netzwerks, include=FALSE}
+# Parameter zu Beschreibung des Netzwerks
+
+# ist das Netzwerk bereits vereinfacht?
+is.simple(nt)
+
+# besteht das Netzwerk aus Komponenten?
+# wenn ja, wie vielen?
+is.connected(nt)
+components(nt)
+
+# Dichte des Netzwerks
+edge_density(nt, loops=FALSE)
+
+# Umfang des Netzwerks
+diameter(nt)
+
+# Pfaddistanzen (Distance)
+farthest_vertices(nt)
+```
+
+Das Hauptnetzwerk besteht aus zwei Komponenten mit 532 und 19 Knoten,
+die nicht miteinander verbunden sind. Die Dichte im Netzwerk beträgt
+0,76 Prozent von allen möglichen Verbindungen. Die maximale Pfaddistanz
+hat 10 Schritte.
+
+```{r Einfache Visualisierung des erstellten Objekt, echo=FALSE, fig.height=9, fig.width=16}
+
+plot(
+  set.seed=123,
+  nt,
+  asp=0, 
+  layout=layout_with_kk,
+  vertex.size=5,
+  vertex.label= nodes$id,
+  main ="Übersicht Gesamtnetzwerk")
+```
+
+### Analyse der Teilnetzwerke
+
+Nachdem wir das Gesamtnetzwerk erstellt haben, wollten wir das Netzwerk
+für die Übersichtlichkeit vereinfachen. Daher haben wir für die drei
+Relations "Director", "Writer" und "Executive Producer" drei
+Teilnetzwerke erstellt. Mit dem Befehl subgraph.edges haben wir die
+teilnetzwerke "director" für relation=1 erstellt, für relation=2 das
+Netzwerk "writer" und für relation=3 das Teilnetzwerk "ex_producer".
+
+```{r Teilnetzwerke für Director, Writer und Executive Producer erstellen, include=FALSE}
+# Teilnetzwerk für Relation 1, 2 und 3 erstellen
+
+director<- subgraph.edges(nt, E(nt)[relation==1])
+director
+
+writer<- subgraph.edges(nt, E(nt)[relation==2])
+writer
+
+ex_producer<- subgraph.edges(nt, E(nt)[relation==3])
+ex_producer
+```
+
+### Teilnetzwerke nach Beziehungsart (Edge-Attribute)
+
+Das Netzwerk besteht aus drei Beziehungsarten:
+
+1.  **Zusammen studiert** (zukünftig Teilnetzwerk study),
+2.  **Romantische Beziehungen** (zukünftig Teilnetzwerk romance) und
+3.  **Geschäftliche Beziehung** (zukünftig Teilnetzwerk work).
+
+```{r Teilnetzwerke erstellen, include=FALSE}
+# Zusammen studiert
+study_subset_edges <- E(nt)[relation == 5]
+study <- subgraph.edges(nt, study_subset_edges)
+
+# Romantische Beziehungen (Paar, Heirat)
+romance_subset_edges <- E(nt)[relation == 6]
+romance <- subgraph.edges(nt, romance_subset_edges)
+
+# Geschäftliche Beziehungen (Produktionsgesellschaft)
+work_subset_edges <- E(nt)[relation == 7]
+work <- subgraph.edges(nt, work_subset_edges)
+
+# Visualisierungen 
+par(mfrow=c(2,2), mar=c(0,0,2,0))
+```
+
+```{r Vergleich der drei Netzwerke, paged.print=TRUE, include=FALSE}
+# Vergleich der drei vereinfachte Netzwerke
+# wir legen die Parameter der Visualisierung fest
+# mfrow definiert, dass es eine Zeile mit drei Spalten sein soll
+# mar steht für margins und legt fest, 
+par(mfrow=c(1,3), mar=c(2,0,2,0)) 
+
+plot(study, 
+     edge.arrow.size=.3,
+     layout=layout_with_kk,
+     edge.color="black",
+     edge.curved=.2,
+     vertex.color="blue",
+     vertex.label= V(nt)$id,
+     main="Zusammen studiert")
+
+plot(romance, 
+     edge.arrow.size=.3,
+     layout=layout_with_kk,
+     edge.color="black",
+     edge.curved=.2,
+     vertex.color="red",
+     vertex.label= V(nt)$id,
+     main="Romantische Beziehung")
+
+plot(work, 
+     edge.arrow.size=.3,
+     layout=layout_with_kk,
+     edge.color="black",
+     edge.curved=.2,
+     vertex.color="green",
+     vertex.label= V(nt)$id,
+     main="Geschäftliche Beziehungen")
+
+# setzt die Darstellung wieder auf eine Abbildung zurück
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+```
+
+# Überprüfung der Hypothesen
+
+## H1: Netflix sucht sich Überflieger
+
+```{r Hypothese 1, echo=FALSE}
+# Netflix arbeitet bevorzugt mit bereits erfolgreichen Menschen aus der Filmbranche zusammen. 
+nt
+vertex.attributes(nt)$awards
+
+a3 <- delete_vertices(nt, V(nt)[awards != 3])
+a3
+
+a2 <- delete.vertices(nt, V(nt)[awards != 2])
+a2
+
+list.vertex.attributes(nt)
+
+vertex.attributes(a3)$awards
+
+plot(a2, 
+     edge.arrow.size=.3,
+     layout=layout_with_kk,
+     edge.color="purple",
+     edge.curved=.2,
+     edge.curved=curve_multiple(a3),
+     main="Akteure mit 4 bis 5 Awards",
+     vertex.label = V(nt)$ID)
+
+plot(a3,
+     edge.arrow.size=.3,
+     layout=layout_with_kk,
+     edge.color="blue",
+     edge.curved=.2,
+     edge.curved=curve_multiple(a3),
+     main="Akteure mit mehr als 5 Awards",
+     vertex.label = V(nt)$ID)
+
+vcount(a3)
+```
+
+Es wurde ein Teilnetzwerk nach dem Vertex Attribut "awards" erstellt.
+Dabei haben alle Akteur\*innen mit einem Award-Wert von drei mehr als
+fünf Preise erhalten. Die Akteur\*innen mit einem Award-Wert von zwei
+haben mindestens vier Preise gewonnen. Die Visualisierungen zeigen, dass
+zehn Personen mehr als fünf Preise gewonnen haben und zwölf Filmmachende
+vier oder fünf Preise gewonnen haben. Insgesamt haben also 22 von 64
+Akteur\*innen eine Vielzahl an Preisen gewonnen. Das entspricht einm
+Drittel der Filmmachenden. Es lässt sich also sagen, dass Netflix gern
+mit bereits erfolgreichen Filmmachenden zusammen arbeitet.
+
+## H2: Netzwerke auch privat
+
+Viele Netflix Drehbuchautor\*innen, Regisseur\*innen sind auch im
+privaten Leben miteinander vernetzt.
+
+Die Untersuchung dieser These erfolgt anhand zwei exemplarischer
+Beispiele:
+
+Jantje Friese und Baran Bo Odar: Mithilfe der Recherche konnte
+festgestellt werden, dass die Drehbuchautoren Jantje Friese und Baran Bo
+Odar bereits mehrere gemeinsame Produktionen hatten. Sie produzierten
+„Dark", „1899", „Who Am I" und „Das letzte Schweigen" gemeinsam.
+Außerdem sind Jantje Friese und Baran bo Odar verheiratet und haben eine
+gemeinsame Tochter (Reinhard, C. 2023). Durch das Attribut "Genre"
+konnte festgestellt werden, dass Drama, Horror und Mystery zu ihren
+Hauptgenres gehört. Außerdem haben beide an der Hochschule für Fernsehen
+und Film Fernsehen in München studiert und später die Berliner
+Produktionsfirma "Dark Ways" gegründet.
+
+```{r Hypothese 2 Jantje Friese und Baran bo Odar, include=FALSE}
+# University
+list.vertex.attributes(nt)
+vertex.attributes(nt)$university
+
+uni <- delete_vertices(nt, V(nt)[university != "Hochschule fuer Fernsehen und Film Muenchen"]) 
+uni
+```
+
+Jochen Laube und Fabian Maubach: Jochen Laube und Fabian Maubauch haben
+2022 gemeinsam die Serie „Die Kaiserin" produziert. Durch die weitere
+Recherchen konnte außerdem festgestellt werden, dass Laube und Maubach
+2015 die Produktionsfirma „Sommerhaus Filmproduktion GmbH" gegründet
+haben. Seitdem sind die Beiden Geschäftsführer der Firma, die ihren Sitz
+in Berlin hat. Darüber hinaus haben beide an der Filmakademie
+Baden-Württemberg studiert.
+
+```{r Hypothese 2 Jochen Laube und Fabian Maubach, include=FALSE}
+uni_bw <- delete_vertices(nt, V(nt)[university != "Filmakademie Baden Wuerttemberg"]) 
+uni_bw
+```
+
+Schlussendlich lässt sich sagen, dass es in diesem Netzwerk durchaus
+Akteure gibt, die auch im privaten Leben miteinander vernetzt sind oder
+immer wieder mit denselben Akteur\*innen zusammenarbeiten. Jedoch lässt
+sich daraus nicht schlussfolgern, bei wie viel weiteren Akteur\*innen
+dies ebenfalls der Fall ist. Es lässt sich also nicht eindeutig sagen,
+ob die These belegt werden kann.
+
+## H3: Netflix lagert seine Produktionen aus
+
+Für diese These wurde nach dem Vertex-Attribut „Produktionsfirma"
+gefiltert und nachgeschaut, wie viele Serien und Filme direkt von
+Netflix Studios kamen und wie viele von anderen Produktionsfirmen
+produziert wurden.
+
+```{r Hypothese 3, echo=FALSE, include=FALSE}
+nest  <- delete_vertices(nt, V(nt)[Produktionsfirma != "Netflix Studios"])
+nest
+
+# Anzahl der Vertices = 2
+vcount(nest)
+
+# Anzahl der Edges = 0
+ecount(nest)
+
+# Bildundtonfabrik
+butf  <- delete_vertices(nt, V(nt)[Produktionsfirma != "Bildundtonfabrik"]) 
+butf
+
+# Anzahl der Vertices = 26
+vcount(butf)
+
+# Anzahl der Edges = 12
+ecount(butf)
+
+# Dark Ways
+dw  <- delete_vertices(nt, V(nt)[Produktionsfirma != "Dark Ways"]) 
+dw
+
+# Anzahl der Vertices = 9
+vcount(dw)
+
+# Anzahl der Edges = 0
+ecount(dw)
+
+# Gebrueder Beetz Filmproduktion
+gb  <- delete_vertices(nt, V(nt)[Produktionsfirma != "Gebrueder Beetz Filmproduktion"]) 
+gb
+
+# Anzahl der Vertices = 9
+vcount(gb)
+
+# Anzahl der Edges = 0
+ecount(gb)
+
+# Visualisierung 
+par(mfrow=c(2,2), mar=c(0,0,2,0))
+
+plot(nest,
+     layout=layout_with_kk,
+     main="Netflix Studios Visualisierung",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightgreen")
+
+plot(dw,
+     layout=layout_with_kk,
+     main="Dark Ways Visualisierung",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="green")
+
+plot(butf,
+     layout=layout_with_kk,
+     main="Bildundtonfabrik Visualisierung",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="darkgreen")
+
+plot(gb,
+     layout=layout_with_kk,
+     main="Gebrüder Beetz Visualisierung",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="blue")
+
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+```
+
+In der Visualisierung ist zu sehen, welche Produktionsfirmen wie viele
+Serien und/oder Filme produziert haben. Dabei ist zu erkennen, dass die
+Firmen "Dark Ways" und "Bildundtonfabrik" ein viel größeres Netzwerk an
+Eigenproduktionen aufweisen.
+
+Das Gesamtnetzwerk hat 551 Knoten und 1019 Kanten. Im Vergleich dazu hat
+das Teilnetzwerk der Netflix Eigenproduktionen 2 Knoten und keine
+Kanten, also nicht viele Eigenproduktionen und auch keine untereinander
+verbundenen Akteur\*innen. Netflix Studios hat also nur sehr wenige
+Serien selbst produziert. Das Bildundtonfabrik-Netzwerk hingegen hat 26
+Knoten und zwölf Kanten, also mehrere Eigenproduktionen und auch mehrere
+Verbindungen der Akteur\*innen und Produktionen untereinander. Die
+Produktionsfirma "Dark Ways" hat neun Knoten und keine Kanten,also keine
+Produktionen, die untereinander verbunden sind. Es lässt sich also
+sagen, dass Netflix seine Produktionen definitiv nicht alle selbst
+produziert.
+
+## H4: Filmhochschule Ludwigsburg bringt Profis hervor
+
+```{r Hypothese 4, include=FALSE}
+# Die meisten Regisseur*innen haben an der Filmakademie Baden Wuerttemberg studiert.
+
+# Nach Universität Ludwigsburg filtern 
+
+Filmak_bw <- delete_vertices(nt, V(nt)[university_short!="FABW"])
+Filmak_bw
+
+# Dreizehn Drehbuchautoren waren auf der FABW 
+
+# Nach Universität Köln filtern
+
+Uni_Koeln <- delete_vertices(nt, V(nt)[university_short!="KHM"])
+Uni_Koeln
+# Drei Drehbuchautoren haben in Köln studiert
+
+# Nach Universität München filtern
+
+Uni_Muenchen <- delete_vertices(nt, V(nt)[university_short!="HFFM"])
+Uni_Muenchen
+
+# Drei Drehbuchautoren haben in München studiert
+```
+
+Die Filmakademie Baden-Württemberg mit ihrem Animationsinstitut und dem
+Postgraduierten-Programm Atelier Ludwigsburg-Paris zählt zu den
+international angesehensten Film- und Medienhochschulen (Filmakademie
+Baden-Württemberg \| Stadt Ludwigsburg \| Ludwigsburg, o. J.). Daher
+wollten wir wissen, ob sich diese Aussage auch in unserem Netzwerk
+widerspiegelt und wir diese These bestätigen können. Zum Vergleich
+nahmen wir zwei andere Universitäten, die ebenfalls angesehen im Bereich
+Film sind: Die Hochschule für Fernsehen und Film München und der
+Kunsthochschule für Medien in Köln. Mit dem Befehl delete_vertices
+konnten wir herausfiltern, wie viele Personen an den einzelnen
+Hochschulen studiert haben.Wir haben nach den Universitätskürzeln
+gefiltert, also "university_short !="FABW", "KHM" und "HFFM". Dabei
+haben auf der Filmakademie Baden-Württemberg in Ludwigsburg (Filmak_bw)
+13 Personen aus unserem Netzwerk studiert. An der Kunsthochschule für
+Medien in Köln (Uni_Koeln) und an der Hochschule für Fernsehen und Film
+München (Uni_Muenchen) haben jeweils drei Personen aus unserem Netzwerk
+studiert. Somit können wir diese These eindeutig bestätigen.
+
+## H5: Alle machen Tatort?
+
+```{r Hypothese 5, echo=FALSE, include=FALSE}
+# Ersten Grades
+ego_tatort <- make_ego_graph(nt, order = 1, nodes = V(nt)$name == "Tatort", mode ="all")
+
+ego_tatort <- ego_tatort[[1]]
+
+plot(ego_tatort)
+# 15 Akteur*innen 
+
+# Zweiten Grades
+ego_tatort_2 <- make_ego_graph(nt, order = 2, nodes = V(nt)$name == "Tatort", mode ="all")
+
+ego_tatort_2 <- ego_tatort_2[[1]]
+
+
+plot(ego_tatort_2)
+
+# nur erfolgreiche Akteur*innen (mindestens 4 Preise gewonnen)
+only_successful_tatort_big <- delete_vertices(ego_tatort, V(ego_tatort)[awards == "1"])
+only_successful_tatort_big
+
+plot(only_successful_tatort_big,
+     edge.arrow.size=.3,
+     layout=layout_with_kk,
+     edge.color="blue",
+     edge.curved=.2,
+     vertex.label.color="black")
+
+# nur erfolgreiche Akteur*innen (über 5 Preise gewonnen)
+only_successful_tatort <- delete_vertices(ego_tatort, V(ego_tatort)[awards != "3"])
+only_successful_tatort
+
+# Visualisierung
+
+plot(only_successful_tatort,
+     edge.arrow.size=.3,
+     layout=layout_with_kk,
+     edge.color="blue",
+     edge.curved=.2,
+     vertex.label.color="black")
+
+# Viviane Andereggen, Sebastian Colley, Oliver Hirschbiegel und Christian Alvart 
+```
+
+Hier haben wir überprüft, ob folgende Hypothese auf unser Netzwerk
+zutrifft: Die meisten erfolgreicher
+Drehbuchautor\*innen/Regisseur\*innen/Produzent\*innen haben an
+mindestens einem Tatort mitgewirkt.
+
+Dazu haben wir zuerst ein Ego-Netzwerk für den Knoten "Tatort" erstellt.
+Das Tatort-Netzwerk ersten Grades zeigt alle Akteur\*innen, die schon
+mal an einem Tatort mitgearbeitet haben. Das Netzwerk zweiten Grades
+zeigt zusätzlich noch die Produktionen, an denen sie sonst noch
+mitgearbeitet haben.
+
+Schließlich haben wir mit dem delete.vertices-Befehl alle Knoten aus dem
+Tatort-Netzwerk gelöscht, die nur ein bis drei Preise gewonnen haben.
+Somit zeigt das Netzwerk only_successful_tatort_big alle Akteur\*innen
+an, die mindestens vier Preise gewonnen haben.
+
+Um den Rahmen noch etwas mehr einzuschränken, haben wir auch ein zweites
+Netzwerk visualisiert, dass nur die Akteur\*innen anzeigt, die über fünf
+Preise gewonnen haben.
+
+Bei 64 Akteur\*innen-Knoten im Gesamtnetzwerk, entsprechen 11 Knoten,
+die bei einem Tatort mitgemacht haben, knapp 19%.
+
+## H6: Filmmachende begegnen sich immer wieder
+
+Zu Beginn unserer Gruppenarbeit haben wir unter anderem die These
+aufgestellt, dass viele Drehbuchautor\*innen, Regisseur\*innen und
+Produzent\*innen bei mehreren Produktionen miteinander zu tun haben. Aus
+diesem Grund haben wir alle Akteur\*innen, die mehrmals zusammen
+gearbeitet haben, mit der Relation = 8 in der Edgelist markiert. Im
+Folgenden wird nun ein Teilnetzwerk erstellt, das ausschließlich die
+Akteuren\* innen zeigt, die öfters zusammen gearbeitet haben.
+
+```{r Hypothese 6, echo=FALSE, include=FALSE}
+# Viele Drehbuchautor*innen, Regisseur*innen, Produzent*innen  arbeiten bei mehreren Produktionen zusammen.
+
+# Teilnetzwerk Relation = 8
+zusammen<- subgraph.edges(nt, E(nt)[relation==8])
+zusammen
+
+# Visualisierung
+plot(zusammen,
+     edge.arrow.size=1.5,
+     layout=layout_with_kk,
+     edge.color="blue",
+     edge.curved=1,
+     edge.curved=curve_multiple(zusammen),
+     vertex.label=V(nt)$id,
+     main="Teilnetzwerk Häufige Zusammenarbeit")
+```
+
+## H7: Männer an die Spitze
+
+```{r Hypothese 7, include=FALSE}
+# Netzwerk nur Frauen
+fem <- delete_vertices(nt,V(nt)[sex == 1])
+fem
+
+fem_nur <- delete_vertices(fem,V(fem)[sex == 99])
+fem_nur
+
+plot(fem_nur, vertex.label=NA)
+
+# von insgesamt 64 Akteur*innen, 17 weibliche Knoten 
+
+# Netzwerk nur Männer
+men <- delete_vertices(nt,V(nt)[sex == 2])
+men
+
+men_nur <- delete_vertices(men,V(men)[sex == 99])
+men_nur
+
+plot(men_nur, vertex.label=NA)
+
+# von insgesamt 64 Akteur*innen, 47 männliche Akteure
+```
+
+Hier haben wir überprüft, ob folgende Hypothese auf unser Netzwerk
+zutrifft: Die Filmbranche ist überwiegend männerdominiert.
+
+Dazu haben wir zuerst mit dem Befehl delete.vertices-Befehl alle Knoten
+aus dem Gesamtnetzwerk gelöscht, die männlich sind und im nächsten
+Schritt dasselbe mit weibliche Knoten gemacht. So kamen wir zu dem
+Ergebnis, dass unser Netzwerk 17 weibliche und 47 männliche Knoten
+beinhaltet. Bei einer prozentualen Verteilung von 73% männlichen und 27%
+weiblichen Knoten, wird die These also bestätigt.
+
+## H7a: Männer produzieren nur mit Männern
+
+### Kombination von Edge- und Nodeattributen
+
+```{r Hypothese 7a, echo=FALSE, include=FALSE}
+# Männer produzieren nur mit Männern
+
+# Frauen im Zusammenarbeitsnetzwerk
+z_fem <- delete_vertices(zusammen,V(zusammen)[sex == 1])
+z_fem
+z_fem_nur <- delete_vertices(z_fem,V(z_fem)[sex == 99])
+z_fem_nur
+count_components(z_fem_nur)
+vertex.attributes(z_fem_nur)$name
+
+# Männer im Zusammenarbeitsnetzwerk
+z_man <- delete_vertices(zusammen,V(zusammen)[sex == 2])
+z_man
+
+z_man_nur <- delete_vertices(z_man,V(z_man)[sex == 99])
+z_man_nur
+count_components(z_man_nur)
+vertex.attributes(z_man_nur)$name
+
+# Visualisierung der Ergebnisse
+par(mfrow=c(2,2), mar=c(0,0,2,0))
+plot(z_fem_nur,
+     layout=layout_with_kk,
+     main="Frauen, die zusammen produziert haben",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightpink")
+
+plot(z_man_nur,
+     layout=layout_with_kk,
+     main="Männer, die zusammen produziert haben",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightblue")
+
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+```
+
+Die These stimmt: In der Visualisierung sieht man deutlich, dass es mehr
+Verbindungen unter den Männern, als unter den Frauen gibt. Somit
+bewahrheitet sich unsere These.
+
+## H7b: Männer produzieren nur Crime
+
+```{r Hypothese 7b, echo=FALSE, include=FALSE}
+# Männer produzieren hauptsächlich Crime und Frauen nur Drama
+list.vertex.attributes(nt)
+vertex.attributes(nt)$sex
+
+# Frauen
+# Frauen im Gesamtnetzwerk
+list.vertex.attributes(fem)
+vertex.attributes(fem)$sex
+
+fem <- delete_vertices(nt,V(nt)[sex == 1])
+fem
+
+fem_nur <- delete_vertices(fem,V(fem)[sex == 99])
+fem_nur
+
+# Frauen, die Drama produziert haben
+fem_nur_dr <- delete_vertices(fem_nur, V(fem_nur)[genre != 6])
+fem_nur_dr
+
+# Frauen, die Crime produziert haben 
+fem_nur_cr <- delete_vertices(fem_nur, V(fem_nur)[genre != 4])
+fem_nur_cr
+
+# Insgesamt
+vcount(fem_nur_cr)
+vcount(fem_nur_dr)
+# 4 der Frauen haben Crime produziert, während 11 Drama produziert haben.
+
+# Männer
+# Männer im Gesamtnetzwerk
+list.vertex.attributes(nt)
+vertex.attributes(nt)$sex
+
+man <- delete_vertices(nt,V(nt)[sex == 2])
+man
+
+list.vertex.attributes(man)
+vertex.attributes(man)$sex
+
+man_nur <- delete_vertices(man,V(man)[sex == 99])
+man_nur
+
+# Männer, die Drama produziert haben
+man_nur_dr <- delete_vertices(man_nur, V(man_nur)[genre != 6])
+man_nur_dr
+
+# Männer, die Horror produziert haben 
+man_nur_cr <- delete_vertices(man_nur, V(man_nur)[genre != 4])
+man_nur_cr
+
+# Insgesamt
+vcount(man_nur_cr)
+vcount(man_nur_dr)
+#23 der Männer haben Crime produziert, während 15 Drama prouduziert haben
+
+# Visualisierungen der Endergebnisse 
+par(mfrow=c(2,2), mar=c(0,0,2,0))
+
+plot(fem_nur_dr,
+     layout=layout_with_kk,
+     main="Frauen, die Drama produziert haben",
+     sub="11 Frauen haben Drama produziert",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="pink")
+
+plot(fem_nur_cr,
+     layout=layout_with_kk,
+     main="Frauen, die Crime produziert haben",
+     sub="4 Frauen haben Crime produziert",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="pink")
+
+plot(man_nur_dr,
+     layout=layout_with_kk,
+     main="Männer, die Drama produziert haben",
+     sub="15 Männer haben Drama prouduziert",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="blue")
+
+plot(man_nur_cr,
+     layout=layout_with_kk,
+     main="Männer, die Crime produziert haben",
+     sub="23 Männer haben Crime produziert",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="blue")
+
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+```
+
+Die Visualisierung zeigt, dass diese These nicht ganz korrekt ist. Die
+Frauen in unserem Netzwerk produzieren zwar deutlich mehr Drama (11),
+aber es gibt durchaus weibliche Akteure, die ebenfalls Crime (4)
+produziert haben. Auch, dass Männer hauptsächlich Crime (23) produzieren
+ist nicht ganz korrekt, denn es gibt auch viele männliche Akteure, die
+ebenfalls Drama (15) produziert haben. Dabei muss ebenfalls
+berücksichtigt werden, dass es mehr Männer als Frauen in unserem
+Gesamtnetzwerk gibt.
+
+## H8: München vor Köln
+
+Köln gilt schon immer als Medienhauptstadt. Als Heimat des WDR, RTL und
+unzähligen weiteren Sendern und Hochburg der YouTube-Szene ist Köln eine
+wichtige Stadt für Medienmachende (Kölnmagazin, 2016). Trotzdem kommen
+23 der Top-100-Unternehmen aus der deutschen Medienbranche aus Bayern,
+die meisten aus München (Demmerle, o. J.). Daher stellten wir die These
+auf, ob München Köln inzwischen abgelöst hat und als neue
+Medienhauptstadt Deutschlands gilt.
+
+```{r These 8, include=FALSE}
+# München hat Köln als Medienstadt überholt.
+
+# Nach München filtern
+Drehort_Muenchen <- delete_vertices(nt, V(nt)[location!="Muenchen"])
+Drehort_Muenchen
+
+# 22 Filme wurden in München gedreht
+
+# Nach Köln filtern
+Drehort_Koeln <- delete_vertices(nt, V(nt)[location!="Koeln"])
+Drehort_Koeln
+
+# 48 Filme wurden in Köln gedreht
+```
+
+Dafür haben wir auch hier den Befehl delete_vertices verwendet. Zuerst
+wurde nach der Location != "Muenchen" und "Koeln" gefiltert, um die
+Anzahl der dort produzierten Episoden herauszufinden. Dabei bekamen wir
+das Ergebnis, dass aus unserer Netzwerkanalyse 22 Filme in München und
+in Köln 48 gedreht wurden. Das ist ein eindeutiges Ergenis, unsere These
+stellt sich als falsch heraus. München hat Köln als Medienhauptstadt
+nicht überholt.
+
+## Teilnetzwerke nach Node-Attributen
+
+### Teilnetzwerk Produktionsfirmen
+
+```{r Teilnetzwerk nach dem Node-Attribut Produktionsfirma, fig.height=9, fig.width=16, echo=FALSE, include=FALSE}
+# Netzwerk der Produktionsfirmen 
+list.vertex.attributes(nt)
+vertex.attributes(nt)$Produktionsfirma
+
+# Welche Produktionsfirma hat wie viele Produktionen bei Netflix 
+produktionsfirmen <- V(nt)$Produktionsfirma
+anzahl_knoten_pro_firma <- table(produktionsfirmen)
+print(anzahl_knoten_pro_firma)
+
+# Wie viele Produktionsfirmen sind in unserem Netzwerk?
+gesamtanzahl_produktionsfirmen <- length(unique(produktionsfirmen))
+print(gesamtanzahl_produktionsfirmen)
+# 214 Produktionsfirmen
+
+#Visualisierung Teilnetzwerk Produktionsfirmen
+pf <- induced_subgraph(nt, V(nt)[V(nt)$attribute =="Produktionsfirma"])
+
+plot(nt,
+     asp=0, 
+     layout=layout.fruchterman.reingold, 
+     vertex.size=5,
+     edge.arrow.size=2,
+     vertex.label=nodes$Produktionsfirma,
+     edge.color="pink",
+     main="Gesamtnetzwerk der Produktionsfirmen",
+   vertex.frame.color="violet",
+     edge.curved=curve_multiple(nt))
+
+
+# Visualisierung wichtiger Produktionsfirmen
+par(mfrow=c(2,2), mar=c(0,0,2,0))
+
+# Kundschafter Filmproduktion  
+Kfp <- delete_vertices(nt, V(nt)[Produktionsfirma != "Kundschafter Filmproduktion"]) 
+Kfp
+
+plot(Kfp,
+     layout=layout_with_kk,
+     main="Kundschafter Filmproduktionen",
+     edge.color="grey20",
+     edge.arrow.size=.3,
+     vertex.color="blue")
+
+vcount(Kfp) # 12
+
+# Netzwerk ARD Degeto Film 
+ARDF  <- delete_vertices(nt, V(nt)[Produktionsfirma != "ARD Degeto Film"])
+ARDF
+
+plot(ARDF,
+     layout=layout_with_kk,
+     main="ARD Degeto Film ",
+     edge.color="grey20",
+     edge.arrow.size=.3,
+     vertex.color="yellow")
+
+vcount(ARDF) # 14
+
+# Netzwerk UFA Fiction 
+UFA  <- delete_vertices(nt, V(nt)[Produktionsfirma != "UFA Fiction"]) 
+UFA
+
+plot(UFA,
+     layout=layout_with_kk,
+     main="UFA Fiction",
+     edge.color="grey20",
+     edge.arrow.size=.3,
+     vertex.color="purple")
+
+vcount(UFA) # 14
+
+# Netzwerk Gebrueder Beetz Filmproduktion
+
+gb  <- delete_vertices(nt, V(nt)[Produktionsfirma != "Gebrueder Beetz Filmproduktion"]) 
+gb
+
+plot(gb,
+     layout=layout_with_kk,
+     main="Gebrueder Beetz Filmproduktion",
+     edge.color="grey40",
+     edge.arrow.size=.3,
+     vertex.color="pink")
+
+vcount(gb) # 9
+
+# Netzwerk Dark Ways 
+dw <- delete_vertices(nt, V(nt)[Produktionsfirma != "Dark Ways"]) 
+dw
+
+plot(dw,
+     layout=layout_with_kk,
+     main="Dark Ways",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightblue")
+
+vcount(dw) #9
+
+# Netzwerk Bildundtonfabrik 
+
+butf <- delete_vertices(nt, V(nt)[Produktionsfirma != "Bildundtonfabrik"])
+butf
+
+plot(butf,
+     layout=layout_with_kk,
+     main="Bildundtonfabrik Visualisierung",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="darkgreen")
+
+vcount(butf) # 26
+```
+
+Die sechs Produktionsfirmen mit den meisten Produktionen aus dem
+deutschen Netflix Netzwerk sind hier visualisiert. Mit 26 Produktionen
+hat die Bildundtonfabrik am meisten für Netflix produziert.
+
+## Teilnetzwerke: Componenten, Cluster und Cliquen
+
+Die Analyse hat Teilnetzwerke nach spezifischen Kriterien generiert.
+Jedes Netzwerk verfügt aber auch über spezielle Eigenarten, wenn sich
+Knoten nach bestimmten Kriterien zusammenfinden.
+
+Auf der Ebene des Netzwerks sind die Komponenten: Wenn keine isolierten
+Knoten existieren und alle Knoten in einem Hauptnetzwerk verbunden sind,
+dann liegt ein Netzwerk mit einer Komponente vor. Die Prüfung erfolgt
+mit dem Befehl is_connected(g). Achtung: manche Berechnungen von
+Netzwerkmaßen sind nur bei Netzwerken möglich, die aus einer Komponente
+bestehen.
+
+### Komponenten
+
+**Komponenten analysieren**\
+Wir sehen, dass das Gesamtnetzwerk aus zwei Komponenten besteht: Einer
+großen Hauptkomponente und einer kleineren Komponente aus 19 Knoten. Die
+kleinere, isolierte Komponente besteht aus dem Netzwerk um die Serie
+"Rohwedder". Die Serie ist weniger vernetzt, da die Akteur\*innen
+beispielsweise nichts in Richtung Film studiert haben und eigentlich aus
+der Politik- oder Wirtschaftsbranche kommen. Hinzu kommt, dass es sich
+nur um drei Akteure handelt, die an der Serie mitgearbeitet haben.
+
+```{r Komponenten analysieren, include=FALSE}
+# Anzahl der Komponenten
+count_components(nt)
+
+nt_groups <- groups(components(nt))
+nt_groups
+```
+
+**Starke und schwache Komponenten** Netzwerke lassen sich in starke und
+schwache Komponenten analysieren. Dazu prüft man zunächst, ob es sich um
+eine Komponente handelt und zerlegt diese dann in eine starke und
+schwache Komponente. Stark bedeutet hier, dass es sich um einen
+Teilcommunities mit einer höheren Dichte handelt.
+
+```{r Starke und schwache Komponenten, include=FALSE}
+# Unteranalyse der Hauptkomponente
+is_connected(nt)
+
+# Analyse der Verteilung der Komponenenten
+components(nt, mode = c("weak", "strong")) 
+
+# Analyse der starken Komponenten
+components(nt, mode = "strong")
+
+# Anzahl der Komponenten
+count_components(nt)
+
+# Aufteilung der Komponenten
+comp_nt <- components(nt)
+groups(comp_nt)
+```
+
+```{r Prüfung verbundener Cluster, include=FALSE}
+# Anzahl der Clusters
+clusters(nt)
+
+# Sind die Cluster miteinander verbunden?
+is_connected(nt)
+```
+
+Die Analyse zeigt: Das Netzwerk besteht hat keine Cluster.
+
+**Netzwerk in Komponenten zerlegen**
+
+```{r Komponenten berechnen und isolieren, fig.height=6, fig.width=19, echo=FALSE, include=FALSE}
+# Anzahl der Clusters
+clusters(nt)
+
+# Komponenten auftrennen
+nt_comp <- decompose.graph(nt)
+nt_comp
+
+# Komponenten neu benennen
+nt_comp1 <- nt_comp[[1]]
+nt_comp2 <- nt_comp[[2]]
+
+# neue Teilkomponenten analysieren
+nt_comp1
+nt_comp1
+
+# Die Komponenten in einer Visualisierung vergleichen
+
+# Visualisierung im Vergleich
+par(mfrow=c(1,2), mar=c(0,0,4,0)) # definiert, dass 3 plots in einer Zeile stehen
+
+plot(nt_comp1, layout=layout_with_kk,
+     edge.arrow.size=.4,
+     edge.color="gold",
+     vertex.color="gold",
+     vertex.frame.color=NA,
+     vertex.label.color="black",
+     edge.curved=.2,
+     edge.curved=curve_multiple(nt_comp1),
+     main="Hauptkomponente")
+
+plot(nt_comp2, layout=layout_with_kk,
+     edge.arrow.size=.4,
+     edge.color="tomato",
+     vertex.color="tomato",
+     vertex.frame.color=NA,
+     vertex.label.color="black",
+     edge.curved=.2,
+     edge.curved=curve_multiple(nt_comp2),
+     main="kleinere Komponente")
+
+par(mfrow=c(1,1), mar=c(0,0,4,0))
+
+
+```
+
+**Relevanz von Komponenten**: Die Aufteilung in Komponenten ist wichtig,
+weil dadurch Netzwerkmaße beeinflusst werden.
+
+```{r Komponenten im Vergleich am Beispiel Dichte, include=FALSE}
+
+# Dichteberechnungen im Vergleich
+edge_density(nt) # 0,76% 
+edge_density(nt_comp1) # 0,79%
+edge_density(nt_comp2) # 18,13%
+```
+
+Beispielsweise zeigt die Berechnung der Dichte im Netzwerk, dass im
+Gesamtnetzwerk nt eine Dichte von 0,76% vorliegt, die Hauptkomponente
+eine Dichte von 0,79% und die Teilkomponente eine Dichte von rund 18%
+besitzt. Dies bedeutet, dass die Teilkomponente deutlich stärker
+vernetzt ist als die Hauptkomponente.
+
+### Communities berechnen
+
+Die Berechnung von Communities ist in unserem Netzwerk nicht sinnvoll,
+weil wir keine Cluster haben. Somit ist ein Ergebnis nicht
+aussagekräftig. Das Gleiche gilt für Dyaden und Triaden. Ohne
+wechselseitige Beziehungen gibt es keine Reziprozität.
+
+### Cliquen
+
+Mit dem Befehl clique() haben wir untersucht, wer häufig zusammen
+gearbeitet hat. Es würde den Rahmen dieser Arbeit sprengen, alle Cliquen
+einzelnd zu untersuchen, daher beschränken wir uns bei der Untersuchung
+ausschließlich auf die größte Clique. Die größte Clique bildet sich aus
+Knoten Georg Hartmann, Soleen Yusef, Bob Konrad, Richard Kropf und Hanno
+Hackfort. Damit wir beurteilen können, ob es Überschneidungen bei den
+Produktionen gibt, erstellen wir für jeden Knoten ein Ego-Netzwerk und
+visuallisieren diese. Im Anschluss vergleichen wir die verschiedenen
+Visualisierungen.
+
+```{r Triadenstruktur: Cliquen, echo=FALSE, include=FALSE}
+# Cliquen innerhalb des Teilnetzwerks Akteur*innen in einem Netzwerk
+cliquen<-cliques(zusammen, min =3, max = NULL)
+cliquen
+
+# Größte Clique in diesem Netzwerk herausfinden
+lc<- largest.cliques(zusammen)
+lc
+
+# Umwandlung zur Visualisierung
+V(zusammen)$id <- V(zusammen)$name
+zusammen_lc <- subgraph(zusammen, lc[[1]])
+
+plot(zusammen_lc,
+     layout= layout.fruchterman.reingold,
+     vertex.label=nodes$id,
+      main="Größte Clique innerhalb des Teilnetzwerks")
+```
+
+```{r Ego-Netzwerke der CLiquen-Mitglieder, fig.height=9, fig.width=16, echo=FALSE, include=FALSE}
+# Überprüfen, ob die Cliquen-Mitglieder bei denselben Produktionen mitgewirkt haben, anhand von Ego-Netzwerken
+
+# Mitglieder im der Clique: Georg Hartmann, Soleen Yusef, Bob Konrad, Richard Kropf, Hanno Hackfort
+list.edge.attributes(nt)
+list.vertex.attributes(nt)
+
+# Egonetzwerk Georg Hartmann
+ego_Hartmann<- make_ego_graph(nt, order = 1, nodes = V(nt)$name == "Georg Hartmann", mode ="all")
+ego_Hartmann
+
+ego_Hartmann1 <- ego_Hartmann[[1]]
+ego_Hartmann1
+
+# Egonetzwerk Soleen Yusef
+ego_yusef<- make_ego_graph(nt, order = 1, nodes = V(nt)$name == "Soleen Yusef", mode ="all")
+ego_yusef
+
+ego_yusef1 <- ego_yusef[[1]]
+ego_yusef1
+
+# Egonetzwerk Bob Konrad
+ego_konrad<- make_ego_graph(nt, order = 1, nodes = V(nt)$name == "Bob Konrad", mode ="all")
+ego_konrad
+
+ego_konrad1 <- ego_konrad[[1]]
+ego_konrad1
+
+# Egonetzwerk Richard Kropf
+ego_kropf<- make_ego_graph(nt, order = 1, nodes = V(nt)$name == "Richard Kropf", mode ="all")
+ego_kropf
+
+ego_kropf1 <- ego_kropf[[1]]
+ego_kropf1
+
+# Egonetzwerk Hanno Hackfort
+ego_Hackfort<- make_ego_graph(nt, order = 1, nodes = V(nt)$name == "Hanno Hackfort", mode ="all")
+ego_Hackfort
+
+ego_Hackfort1 <- ego_Hackfort[[1]]
+ego_Hackfort1
+
+# Visualiserung der Egonetzwerke
+
+par(mfrow=c(2,2), mar=c(0,0,2,0))
+plot(ego_Hartmann1,
+     layout=layout_with_kk,
+     main="Egonetzwerk von Georg Hartmann",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightblue",
+     vertex.label=nodes$id)
+
+plot(ego_yusef1,
+     layout=layout_with_kk,
+     main="Egonetzwerk von Soleen Yusef",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightblue",
+     vertex.size=.5,
+     vertex.label=nodes$id)
+
+plot(ego_konrad1,
+     layout=layout_with_kk,
+     main="Egonetzwerk von Bob Konrad",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightblue",
+     vertex.label=nodes$id)
+
+plot(ego_kropf1,
+     layout=layout_with_kk,
+     main="Egonetzwerk von Richard Kropf",
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightblue",
+     vertex.label=nodes$id)
+
+plot(ego_Hackfort1,
+     layout=layout_with_kk,
+     main="Egonetzwerk von Hanno Hackfort",
+     vertex.label=V(nt)$id,
+     edge.color="grey80",
+     edge.arrow.size=.3,
+     vertex.color="lightblue")
+
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+```
+
+Die Visualisierung der verschieden Akteur\*innen veranschaulicht,
+inwiefern die verschiedenen Cliquenmitglieder untereinander vernetzt
+sind. Man erkennt, dass Bob Konrad, Hanno Hackfort, Soleen Yusef, Georg
+Hartmann und Richard Kropf alle etwas für die "SOKO Leipzig" produziert
+haben, jedoch nicht gemeinsam an derselben Folge. Ebenfalls können wir
+sagen, dass die Akteur\*innen, die in der selben Netflix-Serie
+mitgewirkt haben, auch in anderen Produktionen gemeinsam beteiligt
+waren. Bob Konrad, Hanno Hackfort und Richard Kropf haben bei der
+Netflix-Serie "Kleo" mitgewirkt und auch gemeinsam bei "Gute Freunde -
+der Aufstieg des FC Bayerns" und "4Blocks" mitgeschrieben.
+
+Angesichts dieser Erkenntnisse können wir sagen, dass sich die These
+bewahrheitet. Zwar sind nicht alle Mitglieder der größten Clique
+gleichmäßig miteinander vernetzt, aber auf jeden Fall die, die dieselbe
+Netflixproduktion produziert haben.
+
+Die Visualisierung des Ego-Netzwerks von Soleen Yusef darf man auch
+nicht außer Acht lassen. Sie ist der Knotenpunkt zwischen der größten
+Clique und vielen anderen Filmmachenden im Gesamtnetzwerk.
+
+## Zentralitätsmaße
+
+Nachdem wir das Gesamtnetzwerk beschrieben und entsprechend visualisiert
+haben, wurden die Zentralitätsmaße bestimmt. Deshalb haben wir die
+folgende Werte für das Gesamtnetzwerk erhoben: Höchster
+Indegree/Outdegree Wert, Höchster Betweenness-Wert, Höchster
+Closeness-Wert und den höchsten Eigenvector-Wert.
+
+### Degree
+
+**Degree-Werte allgemein** Analyse des Knotens mit den häufigsten
+starken Beziehungen:
+
+```{r Zentralität: Degree-Werte allgemein, include=FALSE}
+# 1. Knoten mit den stärksten Beziehungen im Gesamtnetzwerk
+# Höchster Indegree-Wert
+ind_nt <- degree(nt, mode="in")
+ind_nt
+which.max(ind_nt) 
+
+# Höchster Outgree-Wert
+outd_nt <- degree(nt, mode="out")
+outd_nt
+which.max(outd_nt) 
+
+# Jantje Friese hat den größten Indegree- und Outdegree-Wert im Gesamtnetzwerk (109).
+
+# 3. Teilnetzwerke 
+# 3.1 Director
+degree_dir <- degree(director)
+degree_dir
+which.max(degree_dir)
+# Baran bo Odar hat den höchsten Degree-Wert (111).
+# 3.2 Writer
+degree_in_wri <- degree(writer)
+degree_in_wri
+which.max(degree_in_wri)
+# Jantje Friese hat den höchsten Degree-Wert (70).
+# 3.3 Producer
+degree_in_ex_pro <- degree(ex_producer)
+degree_in_ex_pro
+which.max(degree_in_ex_pro)
+# Henning Kamm hat den höchsten Degree-Wert (24).
+```
+
+### Betweeness und Broker im Netzwerk
+
+Bei der Berechnung des Betweenness-Werts konnte unter anderem
+festgestellt werden, dass nicht nur Akteure, sondern auch Serien eine
+zentrale Rolle bei den Verbindungen innerhalb eines Netzwerks spielen
+können. Beispielsweise hat die Serie Tatort den höchsten
+Betweenness-Wert, was darauf hindeutet, dass diese maßgeblich zur
+Vernetzung und Zusammenarbeit im Gesamtnetzwerk beiträgt. Damit wir noch
+tiefer in das Netzwerk reinschauen können, wurden diese Werte ebenfalls
+für verschiedene Teilnetzwerke berechnet, welche im darauffolgenden
+Abschnitt aufgezeigt werden.
+
+```{r Zentralität: Betweenness als Broker, echo=FALSE, fig.height=6, fig.width=19, message=FALSE, warning=FALSE, paged.print=FALSE, include=FALSE}
+
+# Höchster Betweenness-Wert
+between_ges <- betweenness(nt)
+between_ges
+which.max(between_ges)
+
+# Die Serie Tatort hat den höchsten Betweenness-Wert (551) im Gesamtnetzwerk. Da wir in dieser Berechnung jedoch nur Akteure haben wollten und keine Serien, haben wir ebenfalls noch den zweithöchsten Betweenness-Wert berechnet. 
+
+# Höchster Betweenness-Wert
+between_ges <- betweenness(nt)
+
+# Index des Knotens mit dem höchsten Betweenness-Wert
+max_index <- which.max(between_ges)
+
+# Höchsten Betweenness-Wert auf einen kleineren Wert setzen (-1)
+between_ges[max_index] <- -1
+
+# Index des Knotens mit dem zweithöchsten Betweenness-Wert
+zweithoechster_index <- which.max(between_ges)
+
+# Der Index des zweithöchsten Betweenness-Werts
+print(zweithoechster_index)
+
+# Mia Spengler hat den zweithöchsten Betweenness-Wert im Gesamtnetzwerk.
+
+# 1. Director-Netzwerk: 
+d_betweenness <- betweenness(director, normalized = T)
+d_betweenness
+which.max(d_betweenness)
+# Baran bo Odar hat den höchsten Betweenness-Wert (111).
+# 2. Writer-Netzwerk
+# Betweenness 
+w_betweenness<-betweenness(writer, normalized = T)
+w_betweenness
+which.max(w_betweenness)
+# Christian Alvart hat den höchsten Betweenness-Wert (221). 
+# 3. Producer-Netzwerk
+# Betweenness 
+ex_betweenness<-betweenness(ex_producer, normalized = T)
+ex_betweenness
+which.max(ex_betweenness)
+# Jochen Laube hat den höchsten Betweeness-Wert (58).
+```
+
+### Closeness
+
+```{r Zentralität: Closeness, fig.height=10, fig.width=16, message=FALSE, warning=FALSE, paged.print=FALSE, include=FALSE}
+
+d_closeness <- closeness(director, normalized = T)
+d_closeness
+
+which.max(d_closeness)
+# Lars Montag hat mit 7 Schritten den höchsten Closeness-Wert.
+
+# Closeness 
+w_closeness <- closeness(writer, normalized = T)
+w_closeness
+
+which.max(w_closeness)
+# Christian Beetz hat mit 53 Schritten den höchsten Closeness-Wert.
+
+# Closeness 
+ex_closeness <- closeness(ex_producer, normalized = T)
+ex_closeness
+
+which.max(ex_closeness)
+# Henning Kamm hat mit 24 Schritten den höchsten Closeness-Wert.
+
+# Höchster Closeness-Wert
+close_ges <- closeness(nt)
+close_ges
+which.max(close_ges)
+# Jan Peter hat hat den größten Closeness-Wert (81) im Gesamtnetzwerk.
+
+```
+
+### Ego-Netzwerke
+
+Zusätzlich haben wir für wichtige Akteur\*innen Ego-Netzwerke erstellt.
+Baran bo Odar hat im Director-Netzwerk sowohl den höchsten Degree-, als
+auch Betweenness-Wert und ist somit ein Broker. Er fungiert als
+Regisseur vor allem als Verbindung zu den Episodenknoten der Serie
+"Dark". Mit insgesamt 26 Episoden hat die Serie die meisten Folgen unter
+den Top 11. Das erklärt seinen hohen Degree-Wert und Betweenness-Wert.
+
+```{r Ego-Netzwerk Baran bo Odar, fig.height=9, fig.width=16, echo=FALSE, include=FALSE}
+#Ego-Netzwerk erstellen
+ego_odar <- make_ego_graph(nt, order = 1, nodes = V(nt)$name == "Baran bo Odar", mode ="all")
+ego_odar
+
+ego_odar1 <- ego_odar[[1]]
+ego_odar1
+
+#Visualisierung
+plot(ego_odar1,
+     main ="Ego-Netzwerk Baran bo Odar",
+     vertex.color="gold",
+     edge.color="grey80",
+     vertex.label= V(nt)$id,
+     layout=layout_with_kk,
+     vertex.size=3)
+```
+
+Jantje Friese hat sowohl im Gesamtnetzwerk, also auch im Writer-Netzwerk
+den höchsten Degree-Wert. Im Ego-Netzwerk von Jantje Friese mit order =
+1 konnte man nicht viel Relevantes erkennen. Daher haben wir mit Order =
+2 gearbeitet. Im Ego-Netzwerk sieht man, dass sie vor allem in der Serie
+Dark mitwirkte und auch zu anderen Drehbuchautor\*innen aus dieser Serie
+Verbindungen hatte, wie Daphne Ferraro, Marc O Seng und Martin Behnke.
+
+```{r Ego-Netzwerk Jantje Friese, fig.height=9, fig.width=16, echo=FALSE}
+
+jantje <- make_ego_graph(nt, order = 2, nodes = V(nt)$name == "Jantje Friese", mode ="all")
+
+jantje1 <- jantje[[1]]
+jantje1
+
+plot(jantje1, 
+     main="Ego-Netzwerk Jantje Friese",
+     vertex.color="gold",
+     edge.color="grey80",
+     vertex.label= V(nt)$id,
+     vertex.size=3)
+```
+
+## Erklärungsmuster: Reziprozität, Transitivität, Homophilie
+
+Reziprozität ist in unserem Netzwerk nicht feststellbar, da es kein
+gerichtetes Netzwerk ist.
+
+Transitivität beschreibt die Möglichkeit, dass zwischen Knoten eine
+Weitergabe stattfindet, während Homophilie die Ähnlichkeit von Knoten
+betont.
+
+```{r Erklärungsmuster: Netzwerk erstellen, include=FALSE}
+# Workaround für Teilnetzwerke 
+el$analysis_study_together <- el$relation == 5 
+el$analysis_are_together <- el$relation == 6 
+el$analysis_work_together <- el$relation == 7 
+
+# Matrix erstellen 
+edgematrix <-as.matrix(el) 
+nt <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=T) 
+romance <- subgraph.edges(nt, E(nt)[relation==6]) 
+study <- subgraph.edges(nt, E(nt)[relation==5]) 
+work <- subgraph.edges(nt, E(nt)[relation==7]) 
+```
+
+### Transitivität
+
+```{r Transitivität, include=FALSE}
+# Untersuchung Transitivität 
+transitivity(romance) # NaN
+transitivity(study) # 96.5% 
+transitivity(work) # 100%
+```
+
+In den Teilnetzwerken "study" und "work" liegt eine hohe Transitivität
+von 96,5% und 100% vor. Über das romantische Netzwerk kann auf Grund
+fehlender Verbindungsinformationen keine Aussage hinsichtlich der
+Transitivität gemacht werden, da nur zwei Knoten in diesem Teilnetzwerk
+enthalten sind. Das bedeutet, dass im Gemeinsamen-Studium-Netzwerk und
+im Zusammenarbeitsnetzwerk sehr häufig Kooperationen in Gruppen oder
+Clustern auftreten, in denen Mitglieder untereinander in Beziehung
+stehen.
+
+### Homophilie
+
+```{r Homophilie, include=FALSE}
+list.vertex.attributes(nt) 
+# Assortivität im Hauptnetzwerk 
+# assortativity_nominal(nt, V(nt)$sex, directed=FALSE) # -12.5%
+# assortativity_nominal(nt, V(nt)$type, directed=FALSE) # NaN
+# assortativity_nominal(nt, V(nt)$genre, directed=FALSE) # 67.6% 
+# Code funktioniert bei uns ganz normal, allerdings macht er bei "Knit" Probleme, daher deaktiviert
+
+# Assortivität im Teilnetzwerk Geschäftliche Beziehungen 
+assortativity_nominal(work, V(work)$sex, directed=FALSE) # -12.5%
+assortativity_nominal(work, V(work)$type, directed=FALSE) # NaN
+assortativity_nominal(work, V(work)$genre, directed=FALSE) # 67.6% # 
+
+# Assortivität im Teilnetzwerk Gemeinsames Studium 
+assortativity_nominal(study, V(study)$sex, directed=FALSE) # -5.00%
+assortativity_nominal(study, V(study)$type, directed=FALSE) # NaN
+assortativity_nominal(study, V(study)$genre, directed=FALSE) # 9.68%
+```
+
+Die negativen Wert bei der Berechnung der Homophilie, gefiltert nach dem
+Geschlecht, zeigen eine Tendenz zur Heterophilie. Heterophilie deutet
+darauf hin, dass Akteur\*innen mit unterschiedlichen EIgenschaften
+untereinander vernetzt sind. In diesem Fall also, verschiedenen
+Geschlechtes. Die Berechnung unserer These 7 zeigt, dass sich insgesamt
+nur ein Drittel Frauen im Netzwerk befinden. Das erklärt, warum sie dazu
+tendieren eher mit Männern verbunden zu sein, da die Anzahl der Männer
+viel höher ist.
+
+Die Werte im Hauptnetzwerk nach Vertex-Attributen liegen alle unter 50%,
+so dass hier keine Form von Homophilie festgestellt werden kann. Das
+gilt auch für das Teilnetzwerk "Gemeinsames-Studium". Beim Netzwerk
+"Geschäftliche Beziehung", das nach dem Vertex-Attribut "genre"
+gefiltert ist, kann ein hoher Homophilie-Wert von 67,6% festgestellt
+werden. Das bedeutet, dass Akteur\*innen, die dasselbe Genre produziert
+haben, auch häufig zusammengearbeitet haben, was zu erwarten war.
+
+# Visualisierung
+
+## Gesamtnetzwerk
+
+Für die abschließende Visualisierung stellen wir noch einmal das
+Gesamtnetzwerk dar. Die roten Knoten sind alle Filmmachenden in unserem
+Netzwerk. Die schwarz eingefärbten Knoten sind alle Filme und Serien,
+die wir für das Netzwerk erhoben haben. Diese Visualisierung verschafft
+schon einmal eine erste Übersicht über die Anzahl der Produktionen und
+der Filmmachenden im Verhältnis.
+
+```{r Visualisierung Gesamtnetzwerk , fig.height=9, fig.width=16, echo=FALSE, include=FALSE}
+#Finale Visualisierung
+#Farben für die verschieden Knoten festlegen
+V(nt)[V(nt)$type == 1]$color <- "red"
+V(nt)[V(nt)$type == 2]$color <- "black"
+V(nt)[V(nt)$type == 3]$color <- "black"
+
+# Plotting 
+
+par(mar=c(10,1,8,1)) 
+
+plot(nt,
+     asp=0,
+     layout=layout.fruchterman.reingold,
+     vertex.label=NA,
+     vertex.size=3,
+     edge.arrow.size=7,
+     edge.color="black",
+     edge.width= 0.2,
+     edge.curved=curve_multiple(nt))
+
+title("Visualisierung des Gesamtnetzwerks",
+sub = "Hervorhebung der einzelnen Produktionen und Filmmachenden",
+cex.main = 3, col.main= "red", cex.sub = 2, font.sub = 3, col.sub = "black")
+
+par(mar=c(2,2,2,2))
+```
+
+```{r Visualisierung Zusammenarbeitsnetzwerk, fig.height=9, fig.width=16, echo=FALSE, include=FALSE}
+#Festlegen von Farben
+V(nt)[V(nt)$sex == 1]$color <- "lightblue"
+V(nt)[V(nt)$sex == 2]$color <- "lightpink"
+
+#Plot
+par(mar=c(10,1,10,1))
+
+plot(zusammen, 
+     asp=0,
+     vertex.label=V(nt)$id,
+     layout=layout.fruchterman.reingold,
+     vertex.label=NA,
+     vertex.size=3,
+     edge.arrow.size=7,
+     edge.color="black",
+     edge.width= 0.2)
+
+title("Teilnetzwerk der zusammenarbeitenden Netflix-Flimmachenden",
+sub = "Wer hat mit wem mehr als zwei mal produziert?",
+cex.main = 3, col.main= "black", cex.sub = 2, font.sub = 3, col.sub = "grey")
+```
+
+### Multiplexes Netzwerk
+
+Um das Gesamtnetzwerk etwas übersichtlicher darszustellen, haben wir die
+verschiedenen Beziehungsarten farblich angepasst.
+
+```{r Visualisierung eines multiplexe Netzwerke erstellen, fig.height=9, fig.width=16, echo=FALSE, include=FALSE}
+# Definiert die Farbe der Relation
+E(nt)[E(nt)$relation == 1]$color <- "blue" 
+E(nt)[E(nt)$relation == 2]$color <- "green"
+E(nt)[E(nt)$relation == 3]$color <- "red"
+E(nt)[E(nt)$relation == 4]$color <- "purple"
+E(nt)[E(nt)$relation == 5]$color <- "pink"
+E(nt)[E(nt)$relation == 6]$color <- "brown"
+E(nt)[E(nt)$relation == 7]$color <- "darkgreen"
+E(nt)[E(nt)$relation == 8]$color <- "lightgreen"
+E(nt)[E(nt)$relation == 9]$color <- "lightblue"
+
+# Visualisierung mit den gesetzten Farben realisieren
+# Visualisierungsparameter festlegen
+par(mar=c(6,3,3,3)) 
+
+# Plot mit den gesetzten Farben realisieren
+plot(nt,
+     asp=0,
+     edge.arrow.size=.10,
+     vertex.color="gray75",
+     vertex.frame.color="NA",
+     vertex.label = NA,
+     vertex.size=5,
+     layout=layout_with_kk,
+     edge.curved=curve_multiple(nt),
+     main="Multiplexes Netzwerk des Netflix Universums",
+     sub=" blau= Director, grün= Writer, rot= Executive Producer, lila= Serie, pink= Zusammen studiert, braun= Romantische Beziehung (Paar, Heirat, etc.), dunkelgrün= Geschäftliche Beziehung (Produktionsgesellschaft),hellgrün= Häufig zusammengearbeitet, hellblau= Tatort ")
+
+par(mar=c(0,0,0,0)) 
+
+# Seitenaufteilung zurücksetzen
+par(mfrow=c(1,1), mar=c(2,0,2,0)) 
+```
+
+```{r Teilnetzwerke im Vergleich, fig.height=6, fig.width=9, message=FALSE, warning=FALSE, paged.print=FALSE, echo=FALSE}
+# definiert die Farbe der Relation
+E(nt)[E(nt)$relation == 5]$color <- "blue" 
+E(nt)[E(nt)$relation == 6]$color <- "red"
+E(nt)[E(nt)$relation == 7]$color <- "green"
+
+# erstellt die Teilnetzwerke 
+study <- subgraph.edges(nt, E(nt)[relation==5]) 
+romance <- subgraph.edges(nt, E(nt)[relation==6])
+work <- subgraph.edges(nt, E(nt)[relation==7])
+
+# Drei Netzwerke in einer Ziele
+par(mfrow=c(1,3), mar=c(2,0,2,0)) 
+
+# Drei Teilnetzwerke nacheinander plotten, diese werden dann in einer Zeile dargestellt
+
+plot(study,
+     asp=0,
+     edge.arrow.size=.5,
+     vertex.color="gray75",
+     vertex.frame.color="NA",
+     vertex.size=8,
+     layout=layout_with_kk,
+     edge.curved=curve_multiple(study),
+     main="Teilnetzwerk Study",
+     sub="n=38 Knoten; Kantenfarbe blau"
+     )
+
+plot(romance,
+     asp=0,
+     edge.arrow.size=.5,
+     vertex.color="gray75",
+     vertex.frame.color="NA",
+     vertex.size=8,
+     layout=layout_with_kk,
+     edge.curved=curve_multiple(romance),
+     main="Teilnetzwerk Romance",
+     sub="n=38 Knoten; Kantenfarbe rot",
+)
+     
+plot(work,
+     asp=0,
+     edge.arrow.size=.5,
+     vertex.color="gray75",
+     vertex.frame.color="NA",
+     vertex.size=8,
+     layout=layout_with_kk,
+     edge.curved=curve_multiple(work),
+     main="Teilnetzwerk Help",
+     sub="n=38 Knoten; Kantenfarbe grün"
+)
+
+# setzt die Seitenaufteilung zurück
+par(mfrow=c(1,1), mar=c(2,0,2,0)) 
+```
+
+# Diskussion: Fazit, Limitationen und Ausblick
+
+Hier findet die Diskussion der Ergebnisse statt: - Wurden anfangs
+Arbeitshypothesen aufgestellt? Lassen sich diese bestätigen oder
+widerlegen? - Welche (neuen) Erkenntnisse hat die Analyse gebracht? - Wo
+liegen die Limitationen in der Studie? - Was könnten nächste Schritte in
+der Forschung sein?
+
+Unsere anfänglichen Arbeitshypothesen konnten zum Großteil bestätigt
+werden. Der steile Erfolg von Netflix Eigenproduktionen hängt auf jeden
+Fall mit den Akteur\*innen zusammen, die Netflix ausgesucht hat. Ein
+Drittel davon wurden aufgrund ihres Erfolges ausgewählt. Dass viele
+Serien aus der Zusammenarbeit mit erfolgreichen Produktionsfirmen wie
+der Bildundtonfabrik hervorgehen, trägt maßgeblich zum Gelingen bei.
+Überraschend war allerdings, wie wenig Netflix Studios selbst produziert
+und stattdessen auslagert.
+
+Allgemein ist die Filmbranche eng miteinander vernetzt, wer einmal
+zusammengearbeitet hat, tut es auch wieder. Wer zusammen studierte,
+gründete später gemeinsame Firmen. Und wer miteinander arbeitet, kennt
+sich auch aus dem privaten Kontext. Vor allem die Crème de la Crème
+bleibt gern unter sich, es gibt Namen, die sehr viel öfter auftauchen
+als andere. Der Erfolg scheint also immer in denselben Kreisen zu
+verkehren.
+
+Klischees, die über die Filmbranche exisitieren, haben einen wahren
+Kern. Die Branche ist immer noch männerdominiert und deckt sich in der
+Genreauswahl mit Vorurteilen der traditionellen Geschlechterrollen. Nach
+wie vor gilt Köln als die Medienhauptstadt und der Tatort als eine
+wichtige Karrierestation. Auch der renommierte Ruf der Filmakademie
+Baden Württemberg wurde erneut bestätigt.
+
+Limitationen gibt es eher weniger, das Netzwerk kann aufgrund des guten
+Datenzugangs ins Unendliche weitergeführt und auch auf andere Länder
+übertragen werden. Der Streamingdienst ist trotz seiner neuen
+Accountregelung nach wie vor auf der Überholspur.
+
+Eine kleine Limitation besteht allerdings darin, dass es teilweise nur
+spärliche Informationen über das Privatleben mancher Akteur\*innen gibt.
+Vermutlich ist das romantische Beziehungsnetzwerk deutlich größer als
+jetzt in unserer Netzwerkanalyse. Mit mehr persönlichen Details über die
+Akteur\*innen könnte vor allem unsere zweite Hypothese stichhaltiger
+belegt werden. Eine weitere Limitation stellt die Forschungsliteratur
+dar. Bisher wurden wenig Soziale Netzwerkanalysen auf dem Gebiet
+Streamingdienste und Netflix betrieben.
+
+Weitere Schritte könnten jetzt sein, die Netflix Originals auf dem
+US-Markt zu untersuchen. Oder das von uns auf die Top 11 beschränkte
+Sample zu erweitern. Es wäre mit Sicherheit auch interessant alle Serien
+seit der ersten Eigenproduktion zu erheben.
+
+Eine weiterer Twist des Themas wäre, unsere Forschungsfrage auf
+Schauspieler\*innen zu beziehen. Vor allem auf dem US-Markt wäre es
+spannend zu sehen, ob Schauspieler\*innen durch Netflix erfolgreich
+wurden oder ob es umgekehrt ist, wie bei den Filmmachenden, die vorher
+schon erfolgreich waren.
+
+# Anlage
+
+## Literatur
+
+Btf • bildundtonfabrik. (o. J.). btf. Abgerufen 27. November 2023, von
+<https://btf.de/>
+
+Demmerle, J. (o. J.). Medien in Bayern---Deutschlands größter
+Medienstandort. iib-pwa. Abgerufen 24. November 2023, von
+<https://www.invest-in-bavaria.com/branchenvielfalt/medien>
+
+Dorfer, T., dpa, & Reuters. (2023, Juli 20). Streamingdienst: Netflix
+gewinnt durch Maßnahmen gegen Passwort-Teilen neue Abonnenten. Die Zeit.
+<https://www.zeit.de/digital/2023-07/netflix-account-teilen-massnahmen-nutzer-umsatz>
+
+Filmakademie Baden-Württemberg \| Stadt Ludwigsburg \| Ludwigsburg. (o.
+J.). Abgerufen 24. November 2023, von
+<https://www.ludwigsburg.de/start/kultur+und+freizeit/filmakademie+baden-wuerttemberg.html>
+
+IMDb: Bewertungen, Rezensionen und Informationen, wo man sich die besten
+Filme und Serien ansehen kann. (o. J.). IMDb. Abgerufen 27. November
+2023, von <https://www.imdb.com/>
+
+Kölnmagazin. (2016, August 17). Köln ist die Medienhauptstadt.
+Kölnmagazin. <https://koelnmagazin.net/koeln-ist-die-medienhauptstadt>
+
+Miller, J. L. (2011). Producing Quality: A Social Network Analysis of
+Coproduction Relationships in High Grossing Versus Highly Lauded Films
+in the U.S. Market. International Journal of Communication, 5(0),
+Article 0.\
+\
+Reinhard, C. (2023, 24. Februar). Nach dem Aus von „1899": Neuer
+Netflix-Deal für Jantje Friese und Baran Bo Odar. Berliner Zeitung.
+<https://www.berliner-zeitung.de/kultur-vergnuegen/kino-streaming/neuer-netflix-deal-fuer-jantje-friese-und-baran-bo-odar-li.321419>
+
+```{r Übersicht Netzwerkattribute}
+list.edge.attributes(nt)
+list.vertex.attributes(nt)
+```
+
+## Codebuch
+
+Das Netzwerk hat nach dem
+[Codebuch](https://github.com/viviba/netflix_eigenproduktionen_deutschland/blob/main/Codebuch.md)
+folgende Attribute:
+
+| *Vertex-Attribute* - id: Kürzel des Knotens
+| - name: Vor- und Nachname des Knotens  - sex: Geschlecht 1 männlich, 2 weiblich, 3 divers  - university: Uni/Hochschule an der Knoten studiert hat  - university_short: Kürzel der jeweiligen Uni/Hochschule  - awards: 1 1-3 Preise, 2 4-5 Preise, 3 über 5 Preise  - type: 1 Akteur\*innen, 2 Episoden, 3 Serien  - genre: 1 fantasy, 2 comedy, 3 rom com, 4 crime, 5 mockumentary, 6 drama, 7 young adult  - country: Kürzel Herkunftsland der Episode/Serie
+| - location: Drehort  - rating: IMDb-Bewertung als Kommazahl (von insgesamt 10) - year: Erscheinungsjahr der Episode  - Produktionsfirma: der jeweiligen Serie/Episode/Film
+
+Die Vertex-Attribute treffen auf alle Knoten zu.
+
+*Edge-Attribute*\
+- relation: 1 Director, 2 Writer, 3 Executive Producer, 4 Serie, 5
+Zusammen studiert, 6 Romantische Beziehung, 7 Geschäftliche Beziehung, 8
+Häufig zusammengearbeitet, 9 Tatort
+
+## Datenmaterial und Skript
+
+Datensatz auf
+[Github](https://github.com/viviba/netflix_eigenproduktionen_deutschland)
+
+## Team, Arbeitsaufwand und Lessons Learned
+
+### Teammitglieder
+
+Hannah Walter, Juliane Kegreiss, Lorena Fuchs, Marie Deufel, Viviana
+Bastone
+
+### Arbeitsaufwand und Rollen im Team
+
+| Hannah Walter: Coding und Datenbereinigung, ca. 80 Stunden
+| Juliane Kegreiss: Recherche und Coding, ca. 80 Stunden  Lorena Fuchs: Coding und Datenbereinigung, ca. 80 Stunden  Marie Deufel: Coding und Visualisierung, ca. 80 Stunden
+| Viviana Bastone: Projektleitung, Literaturrecherche und Coding, ca. 120 Stunden
+
+### Lessons learned
+
+Insgesamt finden wir, dass unser Verständnis für R und Netzwerke im
+Allgemeinen massive Fortschritte gemacht hat.
+
+Unsere größte Herausforderung war allerdings die Datenbereinigung,
+sodass wir eine saubere Node- und Edgelist zum Weiterarbeiten hatten.
+Ein Tipp ist daher ein Kontrollteam festzulegen, das für die
+Datenbereinigung zuständig ist. Ein weiteres Learning ist auch eine
+einheitliche Codierung der IDs. Wir haben uns darauf geeinigt, jeweils
+zwei Buchstaben des ersten und zweiten Wortes zusammenzufügen (Bsp. HaPo
+= Harry Potter). Ein Tipp zur Node- und Edgelist bezieht sich auf leere
+Zellen, die wir anstatt mit "NA" mit 99 codierten.
+
+Das letzte Learning hängt mit der Vorbereitung zusammen: Es ist
+sinnvoll, sich am Anfang direkt genauer zu überlegen, welche exakten
+Verbindungen gebraucht werden. Das hätte uns Arbeit an der Edgelist im
+Nachgang erspart.
+
+Darüber hinaus lohnt es sich immer, über die reinen IMDb-Daten hinaus zu
+recherchieren. So konnten wir feststellen, dass manche Akteur\*innen
+beispielsweise eine eigene Produktionsfirma gegründet haben oder sogar
+verheiratet sind.
